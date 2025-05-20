@@ -168,11 +168,11 @@
 
 
 <!-- What is Torvic.AI Section -->
-<section class="bg-white py-20" style="min-height: 600px;">
+<section class="bg-white py-20" style="min-height: 600px; ">
   <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
     <!-- Left Column -->
-    <div>
+    <div class="max-w-lg ">
       <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">What is Torvic.AI?</h2>
       <p class="text-gray-800 text-base md:text-lg mb-5 leading-relaxed">
         <a href="#" class="text-blue-600 font-semibold underline">Torvic.AI</a> is a learning platform built specifically for 5th-grade math students, designed to make math engaging and effective.
@@ -186,13 +186,13 @@
     </div>
 
     <!-- Right Column -->
-    <div class="space-y-10">
+    <div class="max-w-lg space-y-10 pl-16"> <!-- Added padding-left here -->
       <!-- Feature 1 -->
       <div class="flex items-start gap-5">
         <div class="text-blue-600 text-3xl md:text-4xl font-extrabold leading-none">▞</div>
         <div>
           <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">Real Teachers & Creatives</h3>
-          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed max-w-lg">
+          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed">
             Every lesson is crafted by experts to ensure it’s both accurate and entertaining.
           </p>
         </div>
@@ -203,7 +203,7 @@
         <div class="text-blue-600 text-3xl md:text-4xl font-extrabold leading-none">＋</div>
         <div>
           <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">AI Integration</h3>
-          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed max-w-lg">
+          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed">
             AI-powered visuals and interactive elements keep your child focused and interested.
           </p>
         </div>
@@ -214,7 +214,7 @@
         <div class="text-blue-600 text-3xl md:text-4xl font-extrabold leading-none">▛</div>
         <div>
           <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">Curriculum-Based Learning</h3>
-          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed max-w-lg">
+          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed">
             Our lessons follow the US 5th-grade math curriculum but with a fresh, engaging approach.
           </p>
         </div>
@@ -223,6 +223,10 @@
 
   </div>
 </section>
+
+
+
+
 
 
 
@@ -304,7 +308,7 @@
       </div>
       <!-- Text -->
       <div>
-        <h4 class="text-pink-500 font-semibold text-xl uppercase mb-2">Step 1</h4>
+        <h4 class="text-pink-500 font-bold text-xl uppercase mb-2">Step 1</h4>
         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
           Explore and Preview the Program
         </h3>
@@ -322,7 +326,7 @@
       </div>
       <!-- Text -->
       <div>
-        <h4 class="text-pink-500 font-semibold text-xl uppercase mb-2">Step 2</h4>
+        <h4 class="text-pink-500 font-bold text-xl uppercase mb-2">Step 2</h4>
         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
           Start your Free Trial
         </h3>
@@ -357,7 +361,7 @@
   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-x-4 items-center">
     
     <!-- Left: Image with overlayed text -->
-    <div class="relative overflow-hidden rounded-xl">
+    <div class="relative overflow-hidden rounded-xl max-w-2xl">
       <img src="{{ asset('FFBF42.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
       <div class="absolute bottom-0 left-0 w-full h-1/2 bg-blue-500 clip-triangle z-10"></div>
       <div class="absolute bottom-0 left-0 p-6 md:p-8 z-20 text-white max-w-md">
@@ -374,7 +378,7 @@
     </div>
 
     <!-- Right: 2x2 grid features -->
-    <div class="w-full h-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="w-full max-w-3xl h-full grid grid-cols-1 sm:grid-cols-2 gap-4">
       <!-- Feature 1 -->
       <div class="bg-blue-500 text-white flex flex-col p-6 h-full rounded-md">
         <div class="text-yellow-400 text-2xl mb-4">▲</div>
@@ -470,16 +474,15 @@
 
 
 
-<!-- Testimonial Section -->
-<section class="bg-[#f1f8ff] py-20">
-  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-center gap-8">
+  <!-- Testimonial Section -->
+  <section class="bg-[#f1f8ff] py-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-center gap-8">
 
-    <!-- Testimonial Slider (Left) -->
-    <div class="flex-1 max-w-4xl" id="testimonialSliderWrapper">
-      <div id="testimonialSlider" class="overflow-hidden">
-        <div class="flex transition-transform duration-500" style="width: 300%;">
+      <!-- Testimonial Slider (Left) -->
+      <div class="flex-1 max-w-4xl overflow-hidden" id="testimonialSliderWrapper">
+        <div id="testimonialSlider" class="flex transition-transform duration-500 ease-in-out">
           <!-- Slide 1 -->
-          <div class="w-full flex-shrink-0" style="width: 100%;">
+          <div class="w-full flex-shrink-0 px-4" style="width: 100%;">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 bg-gradient-to-br from-purple-200 to-yellow-100 rounded-full"></div>
               <div>
@@ -494,7 +497,7 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="w-full flex-shrink-0 hidden" style="width: 100%;">
+          <div class="w-full flex-shrink-0 px-4" style="width: 100%;">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 bg-gradient-to-br from-pink-200 to-purple-100 rounded-full"></div>
               <div>
@@ -508,7 +511,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="w-full flex-shrink-0 hidden" style="width: 100%;">
+          <div class="w-full flex-shrink-0 px-4" style="width: 100%;">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 bg-gradient-to-br from-blue-200 to-green-100 rounded-full"></div>
               <div>
@@ -522,13 +525,15 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Arrows (Right, Vertically Centered) -->
-    <div class="flex gap-6 text-2xl pt-6 md:pt-12">
-      <button onclick="prevTestimonial()" class="hover:text-gray-700 transition">&larr;</button>
-      <button onclick="nextTestimonial()" class="hover:text-gray-700 transition">&rarr;</button>
+      <!-- Arrows (Right, Vertically Centered) -->
+      <div class="flex gap-6 text-2xl pt-6 md:pt-12">
+        <button onclick="prevTestimonial()" class="hover:text-gray-700 transition" aria-label="Previous testimonial">&larr;</button>
+        <button onclick="nextTestimonial()" class="hover:text-gray-700 transition" aria-label="Next testimonial">&rarr;</button>
+      </div>
+
     </div>
+  </section>
 
   </div>
 </section>
@@ -550,34 +555,28 @@
 
 
   </main>
+  <script>
+    let currentIndex = 0;
+    const totalSlides = 3;
+    const slider = document.getElementById('testimonialSlider');
 
+    function updateSlider() {
+      const translateXPercent = -currentIndex * 100;
+      slider.style.transform = `translateX(${translateXPercent}%)`;
+    }
+
+    function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    }
+
+    function prevTestimonial() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    }
+  </script>
 </body>
-<script>
-  const slider = document.getElementById("testimonialSlider").firstElementChild;
-  let index = 0;
-  const totalSlides = slider.children.length;
 
-  function showSlide(i) {
-    index = (i + totalSlides) % totalSlides;
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function nextTestimonial() {
-    showSlide(index + 1);
-  }
-
-  function prevTestimonial() {
-    showSlide(index - 1);
-  }
-</script>
-
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('translate-x-0');
-    menu.classList.toggle('translate-x-full');
-  }
-</script>
 </html>
 
 

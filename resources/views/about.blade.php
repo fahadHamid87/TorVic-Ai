@@ -53,7 +53,7 @@
     </div>
 
     <!-- Right: Side Heading -->
-    <div class="text-blue-600 font-bold text-3xl md:text-4xl leading-tight">
+    <div class="text-blue-600 font-bold text-3xl md:text-4xl leading-tight ml-10">
       <h2>Background Story</h2>
       <h2 class="mt-2">of Torvic.AI</h2>
     </div>
@@ -115,7 +115,7 @@
 <section class="bg-white text-black">
   <div class="grid grid-cols-1 md:grid-cols-2 min-h-[700px]">
     <!-- Left Side (Blue Background) -->
-    <div class="bg-blue-500 w-full h-full min-h-[500px]"></div>
+    <div class="bg-blue-500 w-full h-full min-h-[500px] rounded-md"></div>
 
     <!-- Right Side (Text Content) -->
     <div class="p-10 flex flex-col justify-between min-h-[500px]">
