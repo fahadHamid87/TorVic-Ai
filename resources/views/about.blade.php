@@ -34,7 +34,7 @@
 <!-- About Hero Section -->
 <section class="bg-blue-500 bg-grid-blue py-24 px-6 md:px-16">
   <div class="max-w-7xl mx-auto">
-    <h1 class="text-white text-5xl md:text-6xl font-bold">About Torvic.AI</h1>
+    <h1 class="text-white text-5xl md:text-7xl font-bold">About Torvic.AI</h1>
   </div>
 </section>
 
@@ -59,75 +59,84 @@
     </div>
   </div>
 </section>
-
-<!-- Our Vision Section -->
+<!--our vision section-->
 <section class="bg-white py-20 px-6 md:px-16">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     
     <!-- Left: Vision Text -->
     <div>
-      <h2 class="text-pink-600 text-3xl md:text-4xl font-extrabold mb-6">Our Vision</h2>
-      <p class="text-gray-800 text-lg mb-6">
+      <h2 class="text-pink-600 text-3xl md:text-3xl font-extrabold mb-8 uppercase tracking-wide">
+        Our Vision
+      </h2>
+      <p class="text-gray-900 text-lg leading-relaxed mb-6">
         We believe every child deserves access to high-quality education, no matter their location or resources.
       </p>
-      <p class="text-gray-800 text-lg">
+      <p class="text-gray-900 text-lg leading-relaxed">
         Our vision is to bridge educational gaps through AI, making learning creative, engaging, and fun for all.
       </p>
     </div>
+<!-- Right: Pink Highlight Box -->
+<div class="relative bg-pink-500 text-white text-4xl md:text-5xl font-extrabold p-8 rounded-lg flex flex-col justify-center h-full top-10 translate-x-10">
+  <p>Global Education,</p>
+  <p class="mt-4">Powered by AI</p>
+</div>
 
-    <!-- Right: Pink Highlight Box -->
-    <div class="bg-pink-500 text-white text-3xl md:text-4xl font-bold p-10 rounded-lg">
-      <p>Global Education,</p>
-      <p class="mt-2">Powered by AI</p>
-    </div>
+
+
   </div>
 </section>
 
+
 <!-- Our Mission Section -->
-<section class="bg-white py-20 px-6 md:px-16">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<section class="bg-white py-20 px-6 md:px-16 relative">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
     
     <!-- Left: Mission Text -->
     <div>
-      <h2 class="text-yellow-400 text-3xl md:text-4xl font-extrabold mb-6">Our Mission</h2>
-      <p class="text-gray-800 text-lg mb-6">
+      <h2 class="text-yellow-400 text-3xl md:text-4xl font-extrabold mb-6 tracking-wide">Our Mission</h2>
+      <p class="text-gray-800 text-lg mb-6 leading-relaxed max-w-xl">
         Torvic.AI combines AI and creativity to deliver personalized math lessons that spark curiosity and build confidence.
       </p>
-      <p class="text-gray-800 text-lg">
+      <p class="text-gray-800 text-lg leading-relaxed max-w-xl">
         Our goal? To help students everywhere unlock their potential and love learning.
       </p>
     </div>
 
     <!-- Right: Yellow Highlight Box -->
-    <div class="bg-yellow-400 text-white text-3xl md:text-4xl font-bold p-10 rounded-lg">
+    <div class="bg-yellow-400 text-white text-3xl md:text-4xl font-bold p-14 rounded-lg relative mt-12 md:mt-24 md:max-w-2xl max-w-full md:ml-20 leading-tight min-h-[280px] text-center justify-center flex flex-col items-center">
       <p>Making Math Fun and</p>
       <p class="mt-2">Accessible</p>
     </div>
   </div>
 </section>
 
- <!-- Meet Our Founder -->
+
+<!-- Meet Our Founder -->
 <section class="bg-white text-black">
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <!-- Left Side (Blue Background, could be image later) -->
-    <div class="bg-blue-500 h-full w-full min-h-[500px]"></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 min-h-[700px]">
+    <!-- Left Side (Blue Background) -->
+    <div class="bg-blue-500 w-full h-full min-h-[500px]"></div>
 
     <!-- Right Side (Text Content) -->
-    <div class="p-10 flex flex-col justify-center">
-      <p class="text-blue-500 font-bold text-lg tracking-wide uppercase mb-2">
-        Meet Our Founder
-      </p>
-      <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-        A Vision to<br />Change Education
-      </h2>
-      <p class="text-lg text-gray-700 leading-relaxed">
-        Inspired by the challenges in underfunded schools, I founded Torvic.AI to bring 
-        personalized, high-quality education to students everywhere. With a passion for 
+    <div class="p-10 flex flex-col justify-between min-h-[500px]">
+      <div>
+        <p class="text-blue-500 font-bold text-3xl tracking-wide uppercase mb-2">
+          Meet Our Founder
+        </p>
+        <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+          A Vision to<br />Change Education
+        </h2>
+      </div>
+
+      <p class="text-lg text-gray-700 leading-relaxed mt-8">
+        Inspired by the challenges in underfunded schools, I founded Torvic.AI to bring
+        personalized, high-quality education to students everywhere. With a passion for
         tech and education, our vision is to make learning both effective and fun.
       </p>
     </div>
   </div>
 </section>
+
 
 
 <!-- Win-Win Section -->
@@ -249,25 +258,38 @@
   </div>
 </section>
 
+
 <!-- Pink Section -->
-<section class="bg-pink-500 py-24 md:py-32">
-  <div class="max-w-7xl mx-auto px-4 md:px-8">
-    <div class="relative flex justify-center items-center">
-      <!-- Background Video or Image -->
-      <video autoplay muted loop class="w-full max-w-6xl rounded-xl shadow-xl object-cover aspect-video">
-        <source src="{{ asset('video2.mp4') }}" type="video/mp4">
+<section class="bg-pink-500 py-24 md:py-32 overflow-visible">
+  <div
+    class="max-w-screen-xl mx-auto px-4 md:px-8 relative overflow-visible"
+    style="padding-right: 380px;"  <!-- Reserve space for card overlap -->
+  
+    <div class="flex items-start max-w-full overflow-visible">
+      <!-- Video -->
+      <video
+        autoplay
+        muted
+        loop
+        class="rounded-xl shadow-xl w-[1000px] max-w-full h-auto flex-shrink-0"
+      >
+        <source src="{{ asset('video2.mp4') }}" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <!-- Floating Card -->
-      <div class="absolute right-0 md:right-16 lg:right-24 bg-white p-8 md:p-10 rounded-2xl shadow-2xl max-w-md w-full z-10">
+      <!-- Card -->
+      <div
+        class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl max-w-md w-[380px] -ml-24 flex-shrink-0 z-10"
+      >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
-          Ready to Help Your<br>Child Love Math?
+          Ready to Help Your<br />Child Love Math?
         </h2>
         <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
           Join the thousands of parents and educators who trust Torvic.AI to make math fun, engaging, and effective. Sign up today and watch your child succeed in 5th-grade math.
         </p>
-        <button class="bg-pink-500 hover:bg-pink-600 text-white text-lg font-semibold py-3 px-6 rounded-full transition duration-300 w-full">
+        <button
+          class="bg-pink-500 hover:bg-pink-600 text-white text-lg font-semibold py-3 px-6 rounded-full transition duration-300 w-full"
+        >
           Start Free Trial
         </button>
       </div>
@@ -275,6 +297,29 @@
   </div>
 </section>
 
+<style>
+  @media (max-width: 767px) {
+    /* Remove right padding to avoid horizontal scroll */
+    section.bg-pink-500 > div {
+      padding-right: 1rem !important;
+    }
+    /* Stack video + card vertically */
+    section.bg-pink-500 > div > div {
+      flex-direction: column;
+      max-width: 100% !important;
+    }
+    /* Hide video on mobile */
+    section.bg-pink-500 > div > div > video {
+      display: none !important;
+    }
+    /* Make card full width and reset margin */
+    section.bg-pink-500 > div > div > div {
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-top: 1.5rem;
+    }
+  }
+</style>
 
 
 <x-Footer/>

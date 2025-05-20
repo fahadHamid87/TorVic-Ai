@@ -30,52 +30,96 @@
   <!-- Main Wrapper -->
   <main class="w-full">
 
-   <!-- Blue Section -->
-<section class="bg-blue-500 bg-grid-blue text-white flex flex-col items-center justify-center" style="height: 900px;">
-  <h1 class="text-6xl font-bold mb-6 text-center px-4">
-    Master 5th Grade Math with <br>
-    Fun, Personalized AI powered <br>
-    Lessons
-  </h1>
+<!-- Blue Section -->
+<section
+  class="bg-blue-500 bg-grid-blue text-white flex flex-col items-center justify-center min-h-[900px] px-4 py-16"
+>
+<h1
+  style="
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    color: white;
+  "
+  class="text-4xl sm:text-7xl mb-6 text-center max-w-5xl"
+>
+  Master 5th Grade Math with <br />
+  Fun,&nbsp;Personalized&nbsp;AI&nbsp;powered <br />
+  Lessons
+</h1>
 
-  <!-- Paragraph -->
-  <div class="text-center text-white text-xl mb-10 mt-10">
-    <p>
-      Torvic.AI turns math into an exciting adventure with interactive video <br>
-      lessons that follow the US curriculum while adding a fun twist.
-    </p>
-    <p class="font-bold mt-2">
-      Let your child master math with lessons they’ll actually enjoy!
-    </p>
-  </div>
 
-  <!-- Video -->
-  <video controls autoplay muted class="w-full max-w-3xl aspect-video shadow-xl rounded-lg">
-    <source src="{{ asset('video.mp4') }}" type="video/mp4">
+
+
+<!-- Paragraph -->
+<div class="text-center text-white/90 mt-6 mx-auto px-4 max-w-5xl">
+  <span class="block max-w-full text-3xl mx-auto leading-relaxed tracking-normal">
+    Torvic.AI turns math into an exciting adventure with interactive video <br />
+    lessons that follow the US curriculum while adding a fun twist.
+  </span>
+  
+  <p class="font-semibold mt-1 mb-3.5 text-2xl max-w-full text-center mx-auto">
+    Let your child master math with lessons they’ll actually enjoy!
+  </p>
+</div>
+
+
+
+
+
+
+
+<div
+  class="mx-auto overflow-hidden rounded-lg shadow-lg flex-shrink-0"
+  style="max-width: 70vw; width: 90vw;"
+>
+  <video
+    controls
+    autoplay
+    muted
+    class="w-full aspect-video block"
+  >
+    <source src="{{ asset('video.mp4') }}" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
+</div>
+
+
+
 </section>
 
-
 <!-- Pink Section -->
-<section class="bg-pink-500 py-24 md:py-32">
-  <div class="max-w-7xl mx-auto px-4 md:px-8">
-    <div class="relative flex justify-center items-center">
-      <!-- Background Video or Image -->
-      <video autoplay muted loop class="w-full max-w-6xl rounded-xl shadow-xl object-cover aspect-video">
-        <source src="{{ asset('video2.mp4') }}" type="video/mp4">
+<section class="bg-pink-500 py-24 md:py-32 overflow-visible">
+  <div
+    class="max-w-screen-xl mx-auto px-4 md:px-8 relative overflow-visible"
+    style="padding-right: 380px;"  <!-- Reserve space for card overlap -->
+  
+    <div class="flex items-start max-w-full overflow-visible">
+      <!-- Video -->
+      <video
+        autoplay
+        muted
+        loop
+        class="rounded-xl shadow-xl w-[1000px] max-w-full h-auto flex-shrink-0"
+      >
+        <source src="{{ asset('video2.mp4') }}" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <!-- Floating Card -->
-      <div class="absolute right-0 md:right-16 lg:right-24 bg-white p-8 md:p-10 rounded-2xl shadow-2xl max-w-md w-full z-10">
+      <!-- Card -->
+      <div
+        class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl max-w-md w-[380px] -ml-24 flex-shrink-0 z-10"
+      >
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
-          Ready to Help Your<br>Child Love Math?
+          Ready to Help Your<br />Child Love Math?
         </h2>
         <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
           Join the thousands of parents and educators who trust Torvic.AI to make math fun, engaging, and effective. Sign up today and watch your child succeed in 5th-grade math.
         </p>
-        <button class="bg-pink-500 hover:bg-pink-600 text-white text-lg font-semibold py-3 px-6 rounded-full transition duration-300 w-full">
+        <button
+          class="bg-pink-500 hover:bg-pink-600 text-white text-lg font-semibold py-3 px-6 rounded-full transition duration-300 w-full"
+        >
           Start Free Trial
         </button>
       </div>
@@ -83,69 +127,113 @@
   </div>
 </section>
 
+<style>
+  @media (max-width: 767px) {
+    /* Remove right padding to avoid horizontal scroll */
+    section.bg-pink-500 > div {
+      padding-right: 1rem !important;
+    }
+    /* Stack video + card vertically */
+    section.bg-pink-500 > div > div {
+      flex-direction: column;
+      max-width: 100% !important;
+    }
+    /* Hide video on mobile */
+    section.bg-pink-500 > div > div > video {
+      display: none !important;
+    }
+    /* Make card full width and reset margin */
+    section.bg-pink-500 > div > div > div {
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-top: 1.5rem;
+    }
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- What is Torvic.AI Section -->
-<section class="bg-white py-20 " style="height: 600px;">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-    
+<section class="bg-white py-20" style="min-height: 600px;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
     <!-- Left Column -->
     <div>
-      <h2 class="text-4xl font-bold text-gray-900 mb-6">What is Torvic.AI?</h2>
-      <p class="text-gray-700 text-base mb-4">
-        <a href="#" class="text-blue-600 font-medium underline">Torvic.AI</a> is a learning platform built specifically for 5th-grade math students, designed to make math engaging and effective.
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">What is Torvic.AI?</h2>
+      <p class="text-gray-800 text-base md:text-lg mb-5 leading-relaxed">
+        <a href="#" class="text-blue-600 font-semibold underline">Torvic.AI</a> is a learning platform built specifically for 5th-grade math students, designed to make math engaging and effective.
       </p>
-      <p class="text-gray-700 text-base mb-6">
+      <p class="text-gray-800 text-base md:text-lg mb-8 leading-relaxed">
         Validated by real teachers, creatives, and AI, your child will experience math like never before.
       </p>
-      <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">
+      <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-10 rounded-full transition duration-300 text-base md:text-lg">
         Start Free Trial
       </button>
     </div>
 
     <!-- Right Column -->
-    <div class="space-y-8">
+    <div class="space-y-10">
       <!-- Feature 1 -->
-      <div class="flex items-start gap-4">
-        <div class="text-blue-600 text-3xl font-bold">▞</div>
+      <div class="flex items-start gap-5">
+        <div class="text-blue-600 text-3xl md:text-4xl font-extrabold leading-none">▞</div>
         <div>
-          <h3 class="text-xl font-semibold text-gray-900">Real Teachers & Creatives</h3>
-          <p class="text-gray-700 text-sm mt-1">
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">Real Teachers & Creatives</h3>
+          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed max-w-lg">
             Every lesson is crafted by experts to ensure it’s both accurate and entertaining.
           </p>
         </div>
       </div>
 
       <!-- Feature 2 -->
-      <div class="flex items-start gap-4">
-        <div class="text-blue-600 text-3xl font-bold">＋</div>
+      <div class="flex items-start gap-5">
+        <div class="text-blue-600 text-3xl md:text-4xl font-extrabold leading-none">＋</div>
         <div>
-          <h3 class="text-xl font-semibold text-gray-900">AI Integration</h3>
-          <p class="text-gray-700 text-sm mt-1">
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">AI Integration</h3>
+          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed max-w-lg">
             AI-powered visuals and interactive elements keep your child focused and interested.
           </p>
         </div>
       </div>
 
       <!-- Feature 3 -->
-      <div class="flex items-start gap-4">
-        <div class="text-blue-600 text-3xl font-bold">▛</div>
+      <div class="flex items-start gap-5">
+        <div class="text-blue-600 text-3xl md:text-4xl font-extrabold leading-none">▛</div>
         <div>
-          <h3 class="text-xl font-semibold text-gray-900">Curriculum-Based Learning</h3>
-          <p class="text-gray-700 text-sm mt-1">
+          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">Curriculum-Based Learning</h3>
+          <p class="text-gray-700 text-sm md:text-base mt-1 leading-relaxed max-w-lg">
             Our lessons follow the US 5th-grade math curriculum but with a fresh, engaging approach.
           </p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
+
+
 
 <!-- Win-Win Section -->
 <section class="bg-[#f1f8ff] py-20">
   <div class="max-w-7xl mx-auto px-6 text-center">
 
     <!-- Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-14">
-      A Win-Win for Parents, Teachers, and Students Alike
+    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-14">
+      A Win-Win for Parents, Teachers, and <br> Students Alike
     </h2>
 
     <!-- Card Grid -->
@@ -155,7 +243,7 @@
       <div>
         <div class="overflow-hidden rounded-lg mb-4">
           <div class="bg-pink-500 p-1">
-          <img src="{{ asset('1.avif') }}" alt="Parent and child" class="w-full h-full object-cover grayscale" />
+          <img src="{{ asset('1.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
 
           </div>
         </div>
@@ -169,7 +257,7 @@
       <div>
         <div class="overflow-hidden rounded-lg mb-4">
           <div class="bg-blue-500 p-1">
-            <img src="{{ asset('2.avif') }}" alt="Parent and child" class="w-full h-full object-cover grayscale" />
+            <img src="{{ asset('2.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
           </div>
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-2">For Educators</h3>
@@ -182,7 +270,7 @@
       <div>
         <div class="overflow-hidden rounded-lg mb-4">
           <div class="bg-yellow-400 p-1">
-            <img src="{{ asset('3.avif') }}" alt="Parent and child" class="w-full h-full object-cover grayscale" />
+            <img src="{{ asset('3.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
           </div>
         </div>
         <h3 class="text-xl font-semibold text-gray-900 mb-2">For Students</h3>
@@ -200,20 +288,23 @@
   <div class="max-w-7xl mx-auto px-6 text-center">
 
     <!-- Main Heading -->
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-16">
-      Transform Your Child into a Math Pro <br class="hidden md:block" />
-      in Just 3 Simple Steps
-    </h2>
+  <h2 class="w-full text-center text-6xl md:text-6xl font-semibold text-gray-900 mb-16">
+  <span class="block">
+    Transform Your Child into a Math Pro <br class="hidden md:block" />
+    in Just 3 Simple Steps
+  </span>
+</h2>
+
 
     <!-- STEP 1 -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left mb-16">
       <!-- Image -->
       <div>
-       <img src="{{ asset('Unit 9.avif') }}" alt="Parent and child" class="w-full h-full object-cover grayscale" />
+       <img src="{{ asset('Unit 9.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
       </div>
       <!-- Text -->
       <div>
-        <h4 class="text-pink-500 font-semibold text-sm uppercase mb-2">Step 1</h4>
+        <h4 class="text-pink-500 font-semibold text-xl uppercase mb-2">Step 1</h4>
         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
           Explore and Preview the Program
         </h3>
@@ -227,11 +318,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left mb-16">
       <!-- Image -->
       <div>
-        <img src="{{ asset('Unit 7.avif') }}" alt="Parent and child" class="w-full h-full object-cover grayscale" />
+        <img src="{{ asset('Unit 7.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
       </div>
       <!-- Text -->
       <div>
-        <h4 class="text-pink-500 font-semibold text-sm uppercase mb-2">Step 2</h4>
+        <h4 class="text-pink-500 font-semibold text-xl uppercase mb-2">Step 2</h4>
         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
           Start your Free Trial
         </h3>
@@ -245,11 +336,11 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-left">
       <!-- Image -->
       <div>
-       <img src="{{ asset('Unit 8.avif') }}" alt="Parent and child" class="w-full h-full object-cover grayscale" />
+       <img src="{{ asset('Unit 8.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
       </div>
       <!-- Text -->
       <div>
-        <h4 class="text-pink-500 font-semibold text-sm uppercase mb-2">Step 3</h4>
+        <h4 class="text-pink-500 font-bold text-xl uppercase mb-2">Step 3</h4>
         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
           Watch Your Child Grow
         </h3>
@@ -262,18 +353,13 @@
   </div>
 </section>
 
-<!-- Don't Let Your Child Struggle Section -->
 <section class="bg-[#f1f8ff] py-20">
-  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-x-4 items-center">
+    
     <!-- Left: Image with overlayed text -->
     <div class="relative overflow-hidden rounded-xl">
-       <img src="{{ asset('FFBF42.avif') }}" alt="Parent and child" class="w-full h-full object-cover grayscale" />
-      
-      <!-- Blue overlay triangle -->
+      <img src="{{ asset('FFBF42.avif') }}" alt="Parent and child" class="w-full h-full object-cover " />
       <div class="absolute bottom-0 left-0 w-full h-1/2 bg-blue-500 clip-triangle z-10"></div>
-
-      <!-- Text on overlay -->
       <div class="absolute bottom-0 left-0 p-6 md:p-8 z-20 text-white max-w-md">
         <h2 class="text-2xl md:text-3xl font-bold mb-4 leading-snug">
           Don’t Let Your Child <br /> Struggle with Math!
@@ -288,59 +374,65 @@
     </div>
 
     <!-- Right: 2x2 grid features -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div class="w-full h-full grid grid-cols-1 sm:grid-cols-2 gap-4">
       <!-- Feature 1 -->
-      <div class="bg-blue-500 text-white p-6 rounded-xl">
-        <div class="text-yellow-400 text-xl mb-2">▲</div>
-        <h3 class="font-semibold text-lg mb-1">Engaging Video Lessons</h3>
+      <div class="bg-blue-500 text-white flex flex-col p-6 h-full rounded-md">
+        <div class="text-yellow-400 text-2xl mb-4">▲</div>
+        <h3 class="font-semibold text-lg mb-2">Engaging Video Lessons</h3>
         <p class="text-sm">Fun, interactive lessons that keep your child interested and motivated.</p>
       </div>
 
       <!-- Feature 2 -->
-      <div class="bg-blue-500 text-white p-6 rounded-xl">
-        <div class="text-yellow-400 text-xl mb-2">❘</div>
-        <h3 class="font-semibold text-lg mb-1">Flexible Learning</h3>
+      <div class="bg-blue-500 text-white flex flex-col p-6 h-full rounded-md">
+        <div class="text-yellow-400 text-2xl mb-4">❘</div>
+        <h3 class="font-semibold text-lg mb-2">Flexible Learning</h3>
         <p class="text-sm">Learn anytime, anywhere—whether at home or on the go.</p>
       </div>
 
       <!-- Feature 3 -->
-      <div class="bg-blue-500 text-white p-6 rounded-xl">
-        <div class="text-yellow-400 text-xl mb-2">⟳</div>
-        <h3 class="font-semibold text-lg mb-1">Real-Time Progress Tracking</h3>
+      <div class="bg-blue-500 text-white flex flex-col p-6 h-full rounded-md">
+        <div class="text-yellow-400 text-2xl mb-4">⟳</div>
+        <h3 class="font-semibold text-lg mb-2">Real-Time Progress Tracking</h3>
         <p class="text-sm">Stay in the loop with detailed performance reports and celebrate each success.</p>
       </div>
 
       <!-- Feature 4 -->
-      <div class="bg-blue-500 text-white p-6 rounded-xl">
-        <div class="text-yellow-400 text-xl mb-2">★</div>
-        <h3 class="font-semibold text-lg mb-1">Quizzes and Assessments</h3>
+      <div class="bg-blue-500 text-white flex flex-col p-6 h-full rounded-md">
+        <div class="text-yellow-400 text-2xl mb-4">★</div>
+        <h3 class="font-semibold text-lg mb-2">Quizzes and Assessments</h3>
         <p class="text-sm">Measure your child’s improvement and reinforce learning with fun, interactive quizzes.</p>
       </div>
     </div>
-
   </div>
 </section>
 
+
+
+
 <!-- Signup Announcement Section -->
 <section class="bg-[#e9f1f9] py-20">
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
+  <div class="w-full flex flex-col md:flex-row">
 
-    <!-- Left: Message -->
-    <div class="flex flex-col justify-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        🛠️ Torvic.AI is in <br /> Development Mode
-      </h2>
-      <p class="text-gray-700 text-base mb-4">
-        We're currently building something amazing at Torvic.AI. While we finish up, sign up for our email list to be the first to know when we go live! 📅
-      </p>
-      <p class="text-gray-700 text-base">
-        Get exclusive early access, updates, and special offers. Stay tuned—big things are coming!
-      </p>
-    </div>
+ <!-- Left Side: constrained max width, padded, pushed a bit right -->
+<div class="flex-1 max-w-4xl px-6 md:px-12 flex flex-col justify-center ml-8 md:ml-16">
+  <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 mb-8 flex items-center gap-3">
+    <span>🛠️</span>
+    <span>Torvic.AI is in <br class="md:block hidden" /> Development Mode</span>
+  </h2>
 
-    <!-- Right: Signup Form -->
-    <div class="bg-pink-500 p-6 md:p-10 rounded-xl flex items-center justify-center">
-      <div class="bg-white w-full max-w-md rounded-lg p-6 shadow-lg">
+  <p class="text-gray-800 text-lg mb-6">
+    We're currently building something amazing at Torvic.AI. While we finish up, sign up for our email list to be the first to know when we go live! 📅
+  </p>
+  <p class="text-gray-800 text-lg">
+    Get exclusive early access, updates, and special offers. Stay tuned—big things are coming!
+  </p>
+</div>
+
+
+
+    <!-- Right Side: Pink background flush right, increased height -->
+    <div class="flex-1 bg-pink-500 flex items-center justify-center rounded-tl-xl rounded-bl-xl min-h-[800px] py-16">
+      <div class="bg-white w-full max-w-md rounded-lg p-6 md:p-10 shadow-lg">
         <h3 class="text-xl md:text-2xl font-bold text-center mb-2">Be the First to Experience</h3>
         <p class="text-blue-600 text-center font-medium underline mb-4"><a href="#">Torvic.ai</a></p>
         <p class="text-center text-gray-800 font-semibold mb-6">Sign up now!</p>
@@ -373,6 +465,10 @@
 
   </div>
 </section>
+
+
+
+
 
 <!-- Testimonial Section -->
 <section class="bg-[#f1f8ff] py-20">
