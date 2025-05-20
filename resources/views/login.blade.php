@@ -16,7 +16,7 @@
 <body class="min-h-screen bg-blue-600 flex flex-col items-center justify-center px-4 py-12">
 
   <!-- Header component inside body -->
-  <x-Header/>
+  <x-header/>
 
   <!-- Main Login Card -->
   <div class="max-w-md w-full bg-white rounded-2xl shadow-lg p-8 space-y-6 mt-8 mb-16">
@@ -64,7 +64,7 @@
   </div>
 
   <!-- Footer component inside body -->
-  <x-Footer />
+  <x-footer />
 
 </body>
 </html>

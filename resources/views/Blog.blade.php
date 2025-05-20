@@ -66,7 +66,7 @@
   </div>
 </section>
 
-<x-Footer/>
+<x-footer/>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
 </html>

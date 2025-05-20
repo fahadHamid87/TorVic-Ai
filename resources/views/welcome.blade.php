@@ -24,7 +24,7 @@
 
 
 <body class="bg-gray-100 antialiased">
-<x-Header />
+<x-header />
 
 
   <!-- Main Wrapper -->
@@ -551,7 +551,7 @@
 
 
 
- <x-Footer/>
+ <x-footer/>
 
 
   </main>

@@ -16,7 +16,7 @@
 </style>
 
 <body>
-     <x-Header/>
+     <x-header/>
 
      
 <section class="py-16 px-6 md:px-12 bg-[#f0f6fc]">
@@ -77,6 +77,6 @@
 
 
 
-     <x-Footer/>
+     <x-footer/>
 </body>
 </html>

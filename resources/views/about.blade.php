@@ -29,7 +29,7 @@
 
 <body class="bg-blue-500 text-white font-sans">
 
-<x-Header/>
+<x-header/>
 
 <!-- About Hero Section -->
 <section class="bg-blue-500 bg-grid-blue py-24 px-6 md:px-16">
@@ -322,7 +322,7 @@
 </style>
 
 
-<x-Footer/>
+<x-footer/>
 
 
 
