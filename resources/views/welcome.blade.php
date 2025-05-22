@@ -32,139 +32,185 @@
   <!-- Main Wrapper -->
   <main class="w-full">
 
-  <!-- Enhanced Blue Hero Section -->
-    <section class="hero-gradient text-white flex flex-col items-center justify-center min-h-screen px-4 py-16 relative overflow-hidden">
-        <!-- Floating Background Elements -->
-        <div class="floating-elements">
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-            <div class="floating-shape"></div>
-        </div>
-        
-        <!-- AI Badge -->
-        <div class="ai-badge">
-            AI-Powered Learning Experience
-        </div>
-        
-        <!-- Main Title -->
-        <h1 class="hero-title text-4xl sm:text-6xl lg:text-7xl mb-8 text-center max-w-6xl leading-tight">
-            Master <span class="grade-highlight">5th Grade Math</span> with<br />
-            Fun, Personalized <span class="highlight-text">AI-powered</span><br />
-            Lessons
-        </h1>
-        
-        <!-- Subtitle -->
-        <div class="text-center mt-6 mx-auto px-4 max-w-5xl space-y-6">
-            <p class="hero-subtitle text-xl sm:text-2xl lg:text-3xl leading-relaxed">
-                Torvic.AI turns math into an <strong>exciting adventure</strong> with interactive video<br />
-                lessons that follow the <strong>US curriculum</strong> while adding a fun twist.
-            </p>
-            
-            <p class="hero-description text-lg sm:text-xl lg:text-2xl font-semibold">
-                Let your child master math with lessons they'll <em>actually enjoy!</em>
-            </p>
-        </div>
-        
-        <!-- Video Container -->
-        <div class="video-container mx-auto mt-12 flex-shrink-0 max-w-4xl w-full">
-            <video
-                controls
-                autoplay
-                muted
-                loop
-                class="w-full aspect-video block rounded-3xl"
-                poster="/api/placeholder/800/450"
-            >
-                <source src="video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </div>
-    </section>
+<section
+  class="relative flex min-h-screen flex-col md:flex-row items-center justify-center px-10 py-28 overflow-hidden text-white select-none"
+  style="background: linear-gradient(135deg, #1E88E5 50%, #0d2364 50%)"
+>
+  <!-- Floating geometric shapes -->
+  <div
+    aria-hidden="true"
+    class="absolute top-12 left-12 w-72 h-72 border-4 border-white/20 rounded-lg animate-floatingShape1"
+  ></div>
+  <div
+    aria-hidden="true"
+    class="absolute bottom-16 right-16 w-96 h-96 border-8 border-white/10 rounded-full animate-floatingShape2"
+  ></div>
 
-<!-- Pink Section -->
-<section class="bg-pink-500 py-24 md:py-32 overflow-hidden relative">
-  <div class="max-w-screen-xl mx-auto px-4 md:px-8 relative">
-    <div class="flex flex-col md:flex-row items-center md:items-start justify-start">
-      <!-- Video -->
-      <div class="video-container rounded-xl shadow-xl max-w-[800px] w-full md:w-auto flex-shrink-0 mb-8 md:mb-0 mr-0 md:mr-8">
-        <video autoplay muted loop class="rounded-xl shadow-xl w-full h-auto">
-          <source src="{{ asset('video2.mp4') }}" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="video-overlay absolute inset-0 bg-gradient-to-r from-pink-500 via-transparent"></div>
-      </div>
+  <!-- Left: White text with layered shadows -->
+  <div class="md:w-1/2 max-w-xl px-8 z-20 text-center md:text-left">
+    <h1
+      class="relative text-white font-extrabold tracking-tight leading-[1.05] text-5xl sm:text-6xl md:text-7xl"
+      style="
+        text-shadow:
+          1px 1px 2px rgba(0,0,0,0.3),
+          2px 2px 5px rgba(0,0,0,0.2),
+          5px 5px 10px rgba(0,0,0,0.15);
+      "
+    >
+      Master <br />
+      5th Grade Math <br />
+      <span
+        class="block mt-4 text-xl font-semibold tracking-wide text-white/80"
+        style="text-shadow: none;"
+      >
+        with Fun, Personalized AI-powered Lessons
+      </span>
+    </h1>
 
-      <!-- Card -->
-      <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl max-w-md z-10">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
-          Ready to Help Your<br />Child Love Math?
-        </h2>
-        <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6">
-          Join the thousands of parents and educators who trust Torvic.AI to make math fun, engaging, and effective. Sign up today and watch your child succeed in 5th-grade math.
-        </p>
-        <button class="bg-pink-500 hover:bg-pink-600 text-white text-lg font-semibold py-3 px-6 rounded-full transition duration-300 w-full">
-          Start Free Trial
-        </button>
-      </div>
-    </div>
+    <p class="mt-8 max-w-md text-lg sm:text-xl leading-relaxed text-white/80">
+      Torvic.AI turns math into an exciting adventure with interactive video lessons that follow the US curriculum while adding a fun twist.
+    </p>
+
+    <p class="mt-6 italic max-w-md text-white/60">
+      Let your child master math with lessons they'll actually enjoy!
+    </p>
+
+    <button
+      class="mt-12 rounded-full bg-white px-12 py-4 font-semibold text-[#1E88E5] shadow-lg transition-transform hover:scale-105 hover:shadow-2xl"
+      type="button"
+    >
+      Get Started
+    </button>
   </div>
 
-  <!-- Background Shapes -->
-  <div class="absolute inset-0 pointer-events-none">
-    <div class="shape-1 absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
-      <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M202.5 0C304.857 0 387.5 82.6432 387.5 185C387.5 287.357 304.857 370 202.5 370C100.143 370 17.5 287.357 17.5 185C17.5 82.6432 100.143 0 202.5 0Z" fill="url(#paint0_radial)" />
-        <defs>
-          <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(202.5 185) rotate(90) scale(185)">
-            <stop stop-color="#FEE2E2" />
-            <stop offset="1" stop-color="#FEE2E2" stop-opacity="0" />
-          </radialGradient>
-        </defs>
-      </svg>
-    </div>
-    <div class="shape-2 absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2">
-      <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M202.5 0C304.857 0 387.5 82.6432 387.5 185C387.5 287.357 304.857 370 202.5 370C100.143 370 17.5 287.357 17.5 185C17.5 82.6432 100.143 0 202.5 0Z" fill="url(#paint0_radial)" />
-        <defs>
-          <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(202.5 185) rotate(90) scale(185)">
-            <stop stop-color="#FEE2E2" />
-            <stop offset="1" stop-color="#FEE2E2" stop-opacity="0" />
-          </radialGradient>
-        </defs>
-      </svg>
+  <!-- Right: Video inside asymmetrical clipped container with glowing border -->
+  <div
+    class="md:w-1/2 mt-16 md:mt-0 flex justify-center items-center z-20 px-8"
+    style="background: transparent;"
+  >
+    <div
+      class="relative max-w-[650px] w-full aspect-[16/9] rounded-[2rem] overflow-hidden"
+      style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%)"
+    >
+      <video
+        src="video.mp4"
+        autoplay
+        muted
+        loop
+        controls
+        class="w-full h-full object-cover rounded-[2rem] drop-shadow-xl transition-transform duration-500 hover:scale-105 cursor-pointer"
+      ></video>
+      <!-- Glowing border -->
+      <div
+        class="pointer-events-none absolute inset-0 rounded-[2rem] border-4 border-white/70 opacity-60 blur-md animate-pulse"
+        style="mix-blend-mode: screen"
+      ></div>
     </div>
   </div>
 </section>
 
 <style>
-  @media (max-width: 767px) {
-    /* Remove right padding to avoid horizontal scroll */
-    section.bg-pink-500 > div {
-      padding-right: 1rem !important;
-    }
-    /* Stack video + card vertically */
-    section.bg-pink-500 > div > div {
-      flex-direction: column;
-      max-width: 100% !important;
-    }
-    /* Hide video on mobile */
-    section.bg-pink-500 > div > div > video {
-      display: none !important;
-    }
-    /* Make card full width and reset margin */
-    section.bg-pink-500 > div > div > div {
-      width: 100% !important;
-      margin-left: 0 !important;
-      margin-top: 1.5rem;
-    }
+  @keyframes floatingShape1 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(20px) translateX(15px); }
+  }
+  @keyframes floatingShape2 {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-15px) translateX(-20px); }
+  }
+  .animate-floatingShape1 {
+    animation: floatingShape1 8s ease-in-out infinite;
+  }
+  .animate-floatingShape2 {
+    animation: floatingShape2 10s ease-in-out infinite;
+  }
+</style>
+
+
+
+
+
+
+
+
+<!---pinl section-->
+<section
+  class="relative flex min-h-screen flex-col md:flex-row items-center justify-center px-10 py-28 overflow-hidden select-none"
+  style="background: linear-gradient(135deg, #b72c6f 50%, #f082b4 50%)"
+>
+  <!-- Floating pink blurred shapes -->
+  <div
+    aria-hidden="true"
+    class="absolute top-12 left-12 w-72 h-72 bg-pink-700 rounded-lg opacity-30 blur-3xl animate-floatingShape1"
+  ></div>
+  <div
+    aria-hidden="true"
+    class="absolute bottom-16 right-16 w-96 h-96 bg-pink-400 rounded-full opacity-20 blur-2xl animate-floatingShape2"
+  ></div>
+
+  <!-- Left: Glassmorphic white card with white text -->
+  <div
+    class="md:w-1/2 max-w-lg bg-white/20 backdrop-blur-md rounded-3xl p-12 shadow-lg mx-auto md:mx-0 z-10 text-white"
+  >
+    <h2
+      class="text-5xl sm:text-6xl font-extrabold leading-tight tracking-tight drop-shadow-md"
+    >
+      Ready to Help Your<br />
+      Child Love Math?
+    </h2>
+    <p class="mt-8 text-lg sm:text-xl font-semibold leading-relaxed drop-shadow-sm">
+      Join the thousands of parents and educators who trust Torvic.AI to make math fun, engaging, and effective. Sign up today and watch your child succeed in 5th-grade math.
+    </p>
+    <button
+      class="mt-12 px-12 py-4 bg-gradient-to-r from-pink-600 to-pink-700 rounded-full font-bold shadow-lg transition-transform transform hover:scale-105 hover:brightness-110"
+      type="button"
+    >
+      Start Free Trial
+    </button>
+  </div>
+
+  <!-- Right: Full visible video with glowing neon pink border -->
+  <div
+    class="md:w-1/2 mt-16 md:mt-0 flex justify-center items-center z-10 px-8"
+  >
+    <div
+      class="relative w-full max-w-[650px] rounded-3xl overflow-hidden shadow-2xl shadow-pink-600/80 hover:scale-[1.05] transition-transform duration-500 ease-in-out cursor-pointer"
+    >
+      <video
+        autoplay
+        muted
+        loop
+        controls
+        class="w-full h-auto object-cover rounded-3xl"
+        src="{{ asset('video2.mp4') }}"
+      >
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Neon Glow Border -->
+      <div
+        class="pointer-events-none absolute inset-0 rounded-3xl border-8 border-pink-500 opacity-70 blur-lg animate-pulse"
+        style="mix-blend-mode: screen"
+      ></div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Floating pink shape animations */
+  @keyframes floatingShape1 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, 20px); }
+  }
+  @keyframes floatingShape2 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-20px, -15px); }
+  }
+  .animate-floatingShape1 {
+    animation: floatingShape1 7s ease-in-out infinite;
+  }
+  .animate-floatingShape2 {
+    animation: floatingShape2 9s ease-in-out infinite;
   }
 </style>
 
@@ -182,74 +228,165 @@
 
 
 
+<!--whats is torvic section-->
+<section class="relative py-28 select-none" style="background-color: #1e88e5;">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 relative h-[600px] md:h-[600px]">
 
+    <!-- Desktop only: absolute cards including center text block -->
+    <div class="md:block hidden">
+      <!-- Top Center Card -->
+      <div
+        class="absolute top-[-20px] left-1/2 -translate-x-1/2 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-30"
+      >
+        <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
+          <!-- Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Real Teachers & Creatives</h3>
+        <p class="text-gray-700 text-sm">
+          Every lesson is crafted by experts to ensure it's both accurate and entertaining.
+        </p>
+      </div>
 
-<!-- Modernized What is Torvic.AI Section -->
-<section class="py-20" style="min-height: 600px; background: linear-gradient(135deg, #f9fafb 0%, #ffffff 50%);">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    <!-- Left Column -->
-    <div class="max-w-lg">
-      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">What is <span class="text-blue-600">Torvic.AI</span>?</h2>
-      <p class="text-gray-800 text-base md:text-lg mb-5 leading-relaxed">
-        A revolutionary learning platform designed specifically for 5th-grade math students, making math engaging and effective.
-      </p>
-      <p class="text-gray-800 text-base md:text-lg mb-8 leading-relaxed">
-        Validated by real teachers, creatives, and AI – your child will experience math like never before.
-      </p>
-      <button class="relative bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-10 rounded-full transition-all duration-300 text-base md:text-lg shadow-md hover:shadow-lg hover:-translate-y-1">
-        Start Free Trial
-      </button>
+      <!-- Center Text Block -->
+<div
+  class="absolute top-[40%] left-1/2 transform -translate-x-1/2 max-w-md text-center z-20 bg-white rounded-3xl p-8 shadow-lg"
+  style="min-height: 420px; overflow-y: visible;"
+>
+  <h2 class="text-5xl font-extrabold text-[#ff467c] leading-tight">
+    What is <span class="text-pink-300">Torvic.AI</span>?
+  </h2>
+  <p class="mt-4 text-gray-800 text-base leading-relaxed">
+    A revolutionary learning platform designed specifically for 5th-grade math students,
+    making math engaging and effective.
+  </p>
+  <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+    Validated by real teachers, creatives, and AI – your child will experience math like never before.
+  </p>
+  <button
+    class="mt-6 px-10 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 text-white font-semibold shadow-lg hover:brightness-110 transition"
+  >
+    Start Free Trial
+  </button>
+</div>
+
+      <!-- Left Card -->
+      <div
+        class="absolute top-1/3 left-0 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-10"
+      >
+        <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">AI Integration</h3>
+        <p class="text-gray-700 text-sm">
+          AI-powered visuals and interactive elements keep your child focused and interested.
+        </p>
+      </div>
+
+      <!-- Right Card -->
+      <div
+        class="absolute top-1/3 right-0 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-10"
+      >
+        <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Curriculum-Based Learning</h3>
+        <p class="text-gray-700 text-sm">
+          Our lessons follow the US 5th-grade math curriculum but with a fresh, engaging approach.
+        </p>
+      </div>
     </div>
 
-    <!-- Right Column - Features -->
-    <div class="max-w-lg space-y-6">
-      <!-- Feature 1 -->
-      <div class="group flex items-start gap-5 p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-        <div class="text-blue-600 text-2xl p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+    <!-- Mobile only: stacked cards -->
+    <div class="md:hidden flex flex-col items-center space-y-6">
+      <!-- Teacher card -->
+      <div
+        class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer"
+      >
+        <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
+          <!-- Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
         </div>
-        <div>
-          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">Real Teachers & Creatives</h3>
-          <p class="text-gray-700 text-sm md:text-base mt-2 leading-relaxed">
-            Every lesson is crafted by experts to ensure it's both accurate and entertaining.
-          </p>
-        </div>
+        <h3 class="text-xl font-semibold mb-2">Real Teachers & Creatives</h3>
+        <p class="text-gray-700 text-sm">
+          Every lesson is crafted by experts to ensure it's both accurate and entertaining.
+        </p>
       </div>
 
-      <!-- Feature 2 -->
-      <div class="group flex items-start gap-5 p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-        <div class="text-blue-600 text-2xl p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+     <!-- Center Text Block -->
+<div
+  class="absolute top-[40%] left-1/2 transform -translate-x-1/2 max-w-md text-center z-20 bg-white rounded-3xl p-8 shadow-lg"
+  style="min-height: 380px;"
+>
+  <h2 class="text-5xl font-extrabold text-[#ff467c] leading-tight">
+    What is <span class="text-pink-300">Torvic.AI</span>?
+  </h2>
+  <p class="mt-4 text-gray-800 text-base leading-relaxed">
+    A revolutionary learning platform designed specifically for 5th-grade math students,
+    making math engaging and effective.
+  </p>
+  <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+    Validated by real teachers, creatives, and AI – your child will experience math like never before.
+  </p>
+  <button
+    class="mt-6 px-10 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 text-white font-semibold shadow-lg hover:brightness-110 transition"
+  >
+    Start Free Trial
+  </button>
+</div>
+
+      <!-- AI Integration card -->
+      <div
+        class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer"
+      >
+        <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
           </svg>
         </div>
-        <div>
-          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">AI Integration</h3>
-          <p class="text-gray-700 text-sm md:text-base mt-2 leading-relaxed">
-            AI-powered visuals and interactive elements keep your child focused and interested.
-          </p>
-        </div>
+        <h3 class="text-xl font-semibold mb-2">AI Integration</h3>
+        <p class="text-gray-700 text-sm">
+          AI-powered visuals and interactive elements keep your child focused and interested.
+        </p>
       </div>
 
-      <!-- Feature 3 -->
-      <div class="group flex items-start gap-5 p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 border border-gray-100">
-        <div class="text-blue-600 text-2xl p-3 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+      <!-- Curriculum-Based Learning card -->
+      <div
+        class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer"
+      >
+        <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
           </svg>
         </div>
-        <div>
-          <h3 class="text-xl md:text-2xl font-semibold text-gray-900 leading-snug">Curriculum-Based Learning</h3>
-          <p class="text-gray-700 text-sm md:text-base mt-2 leading-relaxed">
-            Our lessons follow the US 5th-grade math curriculum but with a fresh, engaging approach.
-          </p>
-        </div>
+        <h3 class="text-xl font-semibold mb-2">Curriculum-Based Learning</h3>
+        <p class="text-gray-700 text-sm">
+          Our lessons follow the US 5th-grade math curriculum but with a fresh, engaging approach.
+        </p>
       </div>
     </div>
+
   </div>
 </section>
+
+
+
+
+
 
 
 

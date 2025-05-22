@@ -40,6 +40,15 @@
 
   </style>
   <style>
+  #layered-title {
+    position: relative;
+    height: 1.2em;
+  }
+  #layered-title .layer {
+    pointer-events: none;
+  }
+</style>
+  <style>
   .bg-grid-blue {
     background-image: linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
                       linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
@@ -53,125 +62,240 @@
 
 <x-header/>
 
-<!-- About Hero Section -->
-<section class="bg-blue-500 bg-grid-blue py-24 px-6 md:px-16">
-  <div class="max-w-7xl mx-auto">
-    <h1 id="animated-title" class="text-white text-5xl md:text-7xl font-extrabold leading-tight overflow-hidden inline-block"></h1>
+<!-- 3D Layered Text with Blue Starfield Background -->
+<section class="relative overflow-hidden py-32 px-6 md:px-20 select-none" style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1e40af 100%);">
+  <!-- Blue Starfield Canvas -->
+  <canvas id="starfield" class="absolute inset-0 -z-10 w-full h-full"></canvas>
+
+  <div class="max-w-6xl mx-auto text-center">
+    <h1
+      id="layered-title"
+      class="relative text-6xl md:text-8xl font-extrabold text-white cursor-default"
+      style="perspective: 1000px;"
+    >
+      <span class="layer layer1 absolute top-0 left-0 w-full h-full text-transparent bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text filter drop-shadow-lg" style="transform: translate3d(0,0,30px) scale(1.1); z-index: 3;">
+        About Torvic.AI
+      </span>
+      <span class="layer layer2 absolute top-0 left-0 w-full h-full text-transparent bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text filter drop-shadow-lg" style="transform: translate3d(0,0,15px) scale(1.05); z-index: 2;">
+        About Torvic.AI
+      </span>
+      <span class="layer layer3 relative text-white z-10">
+        About Torvic.AI
+      </span>
+    </h1>
   </div>
 </section>
 
 
-<!-- Modern About Background Story Section -->
-<section class="bg-[#EDF5FF] py-24 px-6 md:px-20 relative overflow-hidden">
-  <!-- Decorative shapes -->
-  <div class="absolute top-0 left-0 w-48 h-48 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-  <div class="absolute bottom-0 right-0 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+<!--- About Us Section - Modern Card Layout -->
+<section class="relative min-h-screen bg-gradient-to-tr from-blue-50 to-blue-100 overflow-hidden px-6 md:px-20 py-32 select-none flex flex-col md:flex-row md:items-center md:justify-center md:gap-10">
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
+  <!-- Abstract SVG shape behind -->
+  <svg class="hidden md:block absolute -top-20 -left-40 w-[600px] h-[600px] opacity-10" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="300" cy="300" r="300" fill="url(#paint0_radial)" />
+    <defs>
+      <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 300) rotate(90) scale(300)">
+        <stop stop-color="#3B82F6" />
+        <stop offset="1" stop-color="#2563EB" stop-opacity="0" />
+      </radialGradient>
+    </defs>
+  </svg>
 
-    <!-- Left: Story Text with icon -->
-    <div class="text-gray-800 text-lg leading-relaxed space-y-6">
-      <div class="flex items-center space-x-4 mb-6">
-        <!-- Icon: Book or lightbulb -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <!-- Left card -->
+  <div 
+    class="relative bg-white bg-opacity-90 backdrop-blur-md rounded-3xl shadow-2xl ring-1 ring-blue-300 p-12 max-w-xl md:max-w-lg -rotate-3 hover:rotate-0 hover:scale-105 transition-transform duration-700 ease-in-out cursor-pointer z-30 flex-shrink-0"
+    onmousemove="tiltCard(event, this)" onmouseleave="resetTilt(this)"
+  >
+    <div class="flex items-center gap-5 mb-8">
+      <div class="p-4 bg-gradient-to-tr from-blue-700 to-blue-400 rounded-2xl shadow-lg text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-2.21 0-4 .895-4 2s1.79 2 4 2 4-.895 4-2-1.79-2-4-2z" />
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 14c-3.314 0-6 1.567-6 3.5V19h12v-1.5c0-1.933-2.686-3.5-6-3.5z" />
         </svg>
-        <h3 class="text-2xl font-semibold text-blue-700">Our Mission</h3>
       </div>
-
-      <p>
-        Torvic.AI was inspired by a powerful image: flooded and overcrowded classrooms in the Philippines, where children struggled to learn under challenging conditions. Out of compassion, an idea took shape—an inspiration to create an alternative tool for learning at home when in-person learning isn’t possible.
-      </p>
-      <p>
-        Motivated by this vision, the Torvic.AI team developed an AI-powered platform that delivers engaging, curriculum-based math lessons, making learning accessible, interactive, and enjoyable for 5th graders everywhere. Designed to support under-resourced communities globally, Torvic.AI aims to level the educational playing field, empowering young learners to reach their full potential.
-      </p>
+      <h3 class="text-3xl md:text-4xl font-extrabold text-blue-800 tracking-wide">Our Mission</h3>
     </div>
-
-    <!-- Right: Side Heading with vertical accent -->
-    <div class="flex items-center justify-start">
-      <div class="border-l-4 border-blue-600 pl-8">
-        <h2 class="text-5xl md:text-6xl font-extrabold text-blue-700 leading-tight tracking-tight max-w-xs">
-          Background<br />Story<br />of Torvic.AI
-        </h2>
-      </div>
-    </div>
+    <p class="text-gray-900 leading-relaxed mb-6 text-base md:text-lg">
+      Torvic.AI was inspired by a powerful image: flooded and overcrowded classrooms in the Philippines, where children struggled to learn under challenging conditions. Out of compassion, an idea took shape—an inspiration to create an alternative tool for learning at home when in-person learning isn’t possible.
+    </p>
+    <p class="text-gray-900 leading-relaxed text-base md:text-lg">
+      Motivated by this vision, the Torvic.AI team developed an AI-powered platform that delivers engaging, curriculum-based math lessons, making learning accessible, interactive, and enjoyable for 5th graders everywhere. Designed to support under-resourced communities globally, Torvic.AI aims to level the educational playing field, empowering young learners to reach their full potential.
+    </p>
   </div>
+
+  <!-- Right card: switched from absolute to relative on small screens -->
+  <div
+    class="relative bg-gradient-to-tr from-blue-700 to-blue-500 rounded-3xl p-16 shadow-2xl ring-1 ring-blue-900 text-white -rotate-2 hover:rotate-0 hover:scale-105 transition-transform duration-700 ease-in-out cursor-default z-40 mt-20 md:mt-0 md:-ml-20 md:flex-shrink-0 md:max-w-md"
+  >
+    <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight drop-shadow-md leading-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+      Background<br />Story<br />of Torvic.AI
+    </h2>
+    <div class="w-28 md:w-36 h-1 rounded-full mt-8 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500"></div>
+  </div>
+
+  <!-- Floating blobs -->
+  <div class="hidden md:block absolute -left-16 top-20 w-40 h-40 rounded-full bg-gradient-to-tr from-purple-300 to-pink-400 opacity-40 filter blur-3xl animate-blob"></div>
+  <div class="hidden md:block absolute -right-24 bottom-10 w-32 h-32 rounded-full bg-gradient-to-br from-yellow-300 to-red-400 opacity-30 filter blur-2xl animate-blob animation-delay-2000"></div>
+
+  <style>
+    @keyframes blob {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(25px, -20px) scale(1.1); }
+      66% { transform: translate(-20px, 25px) scale(0.9); }
+    }
+    .animate-blob {
+      animation: blob 8s infinite ease-in-out;
+    }
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+  </style>
+
+  <script>
+    function tiltCard(event, element) {
+      const rect = element.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const deltaX = (x - centerX) / centerX;
+      const deltaY = (y - centerY) / centerY;
+
+      const maxRotation = 7; // degrees
+      element.style.transform = `scale(1.05) rotateX(${ -deltaY * maxRotation }deg) rotateY(${ deltaX * maxRotation }deg)`;
+    }
+    function resetTilt(element) {
+      element.style.transform = 'scale(1) rotateX(0) rotateY(0)';
+    }
+  </script>
 </section>
 
-<!-- Our Vision Section - Modern Asymmetric Layout -->
-<section class="bg-white py-24 px-6 md:px-20 relative overflow-hidden">
-  <!-- Soft glowing pink orb behind highlight box -->
-  <div class="absolute top-1/2 left-1/4 w-72 h-72 bg-pink-400 rounded-full filter blur-3xl opacity-30 -z-10 transform -translate-y-1/2 -translate-x-1/2"></div>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
 
-    <!-- Left: Pink Highlight Box with vertical accent and clip path -->
-    <div class="relative bg-pink-600 text-white p-14 rounded-3xl shadow-2xl h-[420px] flex flex-col justify-center
-                clip-path-[polygon(10%_0%,100%_0%,100%_100%,0%_100%)] md:order-1">
 
+<section class="relative bg-gradient-to-tr from-pink-50 via-white to-pink-100 py-24 px-6 md:px-20 overflow-hidden">
+  <!-- Background glowing orb -->
+  <div
+    class="absolute -top-20 -left-20 w-96 h-96 bg-pink-400 rounded-full filter blur-3xl opacity-30 animate-pulse-slow pointer-events-none"
+    aria-hidden="true"></div>
+
+  <!-- Background subtle diagonal stripes -->
+  <div
+    class="absolute inset-0 bg-[length:60px_60px] bg-[linear-gradient(45deg,rgba(236,72,153,0.1) 25%,transparent 25%,transparent 50%,rgba(236,72,153,0.1) 50%,rgba(236,72,153,0.1) 75%,transparent 75%,transparent)]"
+    aria-hidden="true"></div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <!-- Left Pink Card -->
+    <div
+      class="relative bg-pink-600 text-white p-16 rounded-3xl shadow-2xl max-w-xl mx-auto md:mx-0
+      clip-path-polygon-[15%_0%,100%_0%,85%_100%,0%_100%]
+      transform transition-transform duration-300 hover:-translate-y-2 cursor-pointer"
+      style="clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);"
+    >
       <!-- Vertical accent bar -->
-      <div class="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-b from-pink-400 via-pink-600 to-pink-800 rounded-l-3xl"></div>
+      <div
+        class="absolute left-0 top-0 bottom-0 w-5 bg-gradient-to-b from-pink-400 via-pink-600 to-pink-800 rounded-l-3xl"></div>
 
-      <p class="text-5xl font-extrabold leading-snug tracking-tight">
-        Global Education,<br />
-        <span class="block mt-4 text-6xl font-black">Powered by AI</span>
-      </p>
-    </div>
-
-    <!-- Right: Vision Text with modern font and spacing -->
-    <div class="md:order-2 max-w-xl">
-      <h2 class="text-pink-600 text-4xl font-extrabold uppercase tracking-widest mb-8 font-sans">
-        Our Vision
+      <h2 class="text-5xl font-extrabold leading-tight tracking-tight drop-shadow-lg">
+        Global Education,
+        <br />
+        <span class="block mt-3 text-7xl font-black">Powered by AI</span>
       </h2>
-      <p class="text-gray-800 text-lg leading-relaxed mb-6 font-light">
-        We believe every child deserves access to high-quality education, no matter their location or resources.
-      </p>
-      <p class="text-gray-800 text-lg leading-relaxed font-light">
-        Our vision is to bridge educational gaps through AI, making learning creative, engaging, and fun for all.
-      </p>
     </div>
 
+    <!-- Right Text Content -->
+    <div class="max-w-xl mx-auto md:mx-0">
+      <h3
+        class="text-pink-600 text-5xl font-extrabold uppercase tracking-widest mb-8 font-sans drop-shadow-sm"
+      >
+        Our Vision
+      </h3>
+      <p class="text-gray-900 text-xl leading-relaxed mb-6 font-light">
+        We believe every child deserves access to high-quality education,
+        no matter their location or resources.
+      </p>
+      <p class="text-gray-900 text-xl leading-relaxed font-light">
+        Our vision is to bridge educational gaps through AI, making learning
+        creative, engaging, and fun for all.
+      </p>
+    </div>
   </div>
 </section>
 
+<style>
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+</style>
 
 
 
-<!-- Our Mission Section - Modern Diagonal Split -->
-<section class="relative bg-white py-28 px-6 md:px-20 overflow-hidden">
-  <!-- Soft decorative yellow abstract shape -->
-  <div class="absolute top-0 right-0 w-72 h-72 bg-yellow-300 rounded-full filter blur-3xl opacity-30 -z-10 translate-x-1/3 -translate-y-1/3"></div>
+
+<section class="relative bg-gradient-to-tr from-yellow-50 via-white to-yellow-100 py-28 px-6 md:px-20 overflow-hidden">
+  <!-- Background glowing orb -->
+  <div
+    class="absolute top-0 right-0 w-96 h-96 bg-yellow-400 rounded-full filter blur-3xl opacity-30 animate-pulse-slow pointer-events-none"
+    aria-hidden="true"></div>
+
+  <!-- Background subtle diagonal stripes -->
+  <div
+    class="absolute inset-0 bg-[length:60px_60px] bg-[linear-gradient(45deg,rgba(202,138,4,0.1) 25%,transparent 25%,transparent 50%,rgba(202,138,4,0.1) 50%,rgba(202,138,4,0.1) 75%,transparent 75%,transparent)]"
+    aria-hidden="true"></div>
 
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
-
-    <!-- Left: Mission Text with vertical accent -->
-    <div class="relative max-w-xl">
+    <!-- Left Text Content -->
+    <div class="relative max-w-xl mx-auto md:mx-0">
       <!-- Vertical accent bar -->
-      <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-yellow-400 via-yellow-500 to-yellow-600 rounded"></div>
+      <div
+        class="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-yellow-400 via-yellow-500 to-yellow-600 rounded"></div>
 
-      <h2 class="text-yellow-400 text-4xl font-extrabold mb-8 uppercase tracking-wide pl-8 font-sans">
+      <h2
+        class="text-yellow-500 text-5xl font-extrabold mb-8 uppercase tracking-wide pl-10 font-sans drop-shadow-sm">
         Our Mission
       </h2>
-      <p class="text-gray-800 text-lg leading-relaxed mb-6 pl-8 font-light">
+      <p class="text-gray-900 text-xl leading-relaxed mb-6 pl-10 font-light">
         Torvic.AI combines AI and creativity to deliver personalized math lessons that spark curiosity and build confidence.
       </p>
-      <p class="text-gray-800 text-lg leading-relaxed pl-8 font-light">
+      <p class="text-gray-900 text-xl leading-relaxed pl-10 font-light">
         Our goal? To help students everywhere unlock their potential and love learning.
       </p>
     </div>
 
-    <!-- Right: Yellow Highlight Box with diagonal clip and hover effect -->
+    <!-- Right Yellow Card -->
     <div
-      class="relative bg-yellow-400 text-white p-20 rounded-tr-[6rem] rounded-bl-[6rem] shadow-2xl min-h-[320px] flex flex-col justify-center items-center
-             clip-path-[polygon(15%_0%,100%_0%,100%_100%,0%_100%)] transition-transform duration-300 ease-in-out hover:scale-105"
+      class="relative bg-yellow-400 text-white p-20 rounded-tr-[6rem] rounded-bl-[6rem] shadow-2xl min-h-[360px] flex flex-col justify-center items-center
+             clip-path-polygon-[15%_0%,100%_0%,100%_100%,0%_100%] transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+      style="clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);"
     >
       <p class="text-4xl font-extrabold drop-shadow-lg">Making Math Fun and</p>
       <p class="text-5xl font-extrabold mt-2 drop-shadow-xl">Accessible</p>
     </div>
-
   </div>
 </section>
+
+<style>
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+</style>
+
 
 
 
@@ -532,5 +656,93 @@
 });
 
 </script>
+
+<script>
+  // Parallax effect for text layers on mouse move
+  const layeredTitle = document.getElementById('layered-title');
+  const layers = layeredTitle.querySelectorAll('.layer');
+
+  document.addEventListener('mousemove', e => {
+    const { innerWidth, innerHeight } = window;
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+
+    // Normalize mouse position to [-1, 1]
+    const xNorm = (mouseX / innerWidth) * 2 - 1;
+    const yNorm = (mouseY / innerHeight) * 2 - 1;
+
+    layers.forEach((layer, i) => {
+      const depth = (layers.length - i) * 10;
+      const moveX = xNorm * depth;
+      const moveY = yNorm * depth;
+      layer.style.transform = `translate3d(${moveX}px, ${moveY}px, 0) scale(${1 + i * 0.05})`;
+    });
+  });
+
+  // Blue Starfield background animation
+  const canvas = document.getElementById('starfield');
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let stars = [];
+
+  class Star {
+    constructor() {
+      this.reset();
+    }
+    reset() {
+      this.x = Math.random() * width;
+      this.y = Math.random() * height;
+      this.z = Math.random() * width;
+      this.size = 1 + Math.random() * 1.5;
+      this.speed = 0.5 + Math.random();
+      this.color = `rgba(173, 216, 230, ${0.3 + Math.random() * 0.5})`; // light blue shades
+    }
+    update() {
+      this.z -= this.speed;
+      if (this.z <= 0) {
+        this.reset();
+        this.z = width;
+      }
+    }
+    draw() {
+      const sx = (this.x - width / 2) * (width / this.z) + width / 2;
+      const sy = (this.y - height / 2) * (width / this.z) + height / 2;
+      const radius = this.size * (width / this.z);
+      ctx.beginPath();
+      ctx.arc(sx, sy, radius, 0, 2 * Math.PI);
+      ctx.fillStyle = this.color;
+      ctx.shadowColor = 'rgba(173, 216, 230, 0.7)';
+      ctx.shadowBlur = 5;
+      ctx.fill();
+    }
+  }
+
+  function init() {
+    resize();
+    stars = [];
+    for (let i = 0; i < 300; i++) {
+      stars.push(new Star());
+    }
+    animate();
+  }
+
+  function resize() {
+    width = canvas.width = canvas.clientWidth;
+    height = canvas.height = canvas.clientHeight;
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    stars.forEach(star => {
+      star.update();
+      star.draw();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  window.addEventListener('resize', init);
+  init();
+</script>
+
 
 </html>

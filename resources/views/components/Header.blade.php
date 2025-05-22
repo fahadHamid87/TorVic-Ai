@@ -98,7 +98,7 @@
 </head>
 <body>
  <!-- Enhanced Navbar -->
-    <header class="sticky top-0 z-50 navbar-gradient shadow-lg">
+    <header class="sticky top-0 z-50 bg-[#1e88e5]  shadow-lg">
         <div class="w-full flex justify-between items-center py-4 px-6">
             <!-- Enhanced Logo Section -->
             <div class="flex items-center ml-4">
