@@ -663,481 +663,176 @@
 
 
 
+<section class="relative py-28 bg-white overflow-hidden select-none">
+  <!-- Floating blobs -->
+  <div class="absolute -top-32 -left-40 w-96 h-96 bg-blue-100 rounded-full blur-[100px] z-0"></div>
+  <div class="absolute top-96 -right-32 w-72 h-72 bg-pink-100 rounded-full blur-[80px] z-0"></div>
 
-<section class="relative py-32 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
-  <!-- Animated Background Elements -->
-  <div class="absolute inset-0 z-0">
-    <!-- Floating Orbs -->
-    <div class="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-br from-blue-200 to-cyan-200 rounded-full blur-[120px] opacity-60 animate-pulse"></div>
-    <div class="absolute top-96 -right-40 w-80 h-80 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full blur-[100px] opacity-60 animate-pulse" style="animation-delay: 2s; animation-duration: 8s;"></div>
-    
-    <!-- Geometric Patterns -->
-    <div class="absolute top-1/3 left-10 w-60 h-60 border-2 border-blue-100 rounded-full opacity-20 rotate-45"></div>
-    <div class="absolute bottom-20 right-20 w-40 h-40 border-2 border-pink-100 rounded-full opacity-20"></div>
-    
-    <!-- Abstract Lines -->
-    <svg class="absolute bottom-0 left-0 w-full h-32 opacity-10" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="currentColor"></path>
-    </svg>
-    
-    <!-- Subtle Grid Pattern -->
-    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+  <!-- Section Heading -->
+  <div class="text-center mb-20 relative z-10">
+    <h2 class="text-5xl font-extrabold leading-tight  text-[#1f88e4]">
+      Get in Touch
+    </h2>
+    <p class="text-gray-600 mt-4 text-lg">We’d love to help you unlock your child’s full potential.</p>
   </div>
 
-  <!-- Content Container -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-    <!-- Heading with Animation -->
-    <div class="text-center mb-24 relative" data-aos="fade-up">
-      <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 text-sm font-medium text-blue-600 mb-4">
-        <span class="flex h-2 w-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span>
-        Get Started Today
-      </span>
-      <h2 class="text-6xl font-black leading-tight tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600">
-        Get in Touch
-      </h2>
-      <p class="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
-        We'd love to help you unlock your child's full potential with our AI-powered learning platform.
-      </p>
-      
-      <!-- Decorative Element -->
-      <div class="absolute left-1/2 -translate-x-1/2 bottom-0 w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transform -translate-y-8"></div>
-    </div>
+  <!-- Cards -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 items-center px-6 md:px-12">
 
-    <!-- Interactive Cards Container -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 relative">
-      
-      <!-- Info Card (5 cols on large screens) -->
-      <div class="lg:col-span-5 group">
-        <div class="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-500 to-blue-700 rounded-3xl p-8 lg:p-10 text-white shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/30 transition-all duration-500 h-full transform hover:-translate-y-1">
-          <!-- Decorative Elements -->
-          <div class="absolute top-0 right-0 w-40 h-40 bg-white opacity-5 rounded-full -translate-x-10 -translate-y-20"></div>
-          <div class="absolute bottom-0 left-0 w-60 h-60 bg-white opacity-5 rounded-full -translate-x-20 translate-y-20"></div>
-          
-          <!-- Animated Highlight -->
-          <div class="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-          
-          <!-- Content -->
-          <div class="relative z-10">
-            <div class="mb-8">
-              <svg class="w-14 h-14 text-white/90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-              </svg>
-            </div>
-            
-            <h3 class="text-4xl font-extrabold mb-6 leading-tight">Unlock the Power of<br />AI-Powered Learning</h3>
-            
-            <p class="text-blue-100 text-lg mb-8 leading-relaxed">
-              Help your child master mathematics through personalized learning experiences powered by advanced AI technology.
-            </p>
-            
-            <div class="space-y-5 mb-10">
-              @foreach([
-                ['icon' => 'brain', 'text' => 'Adaptive Learning Paths'],
-                ['icon' => 'chart-line', 'text' => 'Visual Progress Analytics'],
-                ['icon' => 'trophy', 'text' => 'Achievement Gamification']
-              ] as $feature)
-                <div class="flex items-center group/item">
-                  <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mr-4 group-hover/item:bg-white/20 transition-colors">
-                    <i class="fas fa-{{ $feature['icon'] }} text-white"></i>
-                  </div>
-                  <span class="font-semibold text-lg">{{ $feature['text'] }}</span>
-                </div>
-              @endforeach
-            </div>
-            
-            <a href="#learn-more" class="group inline-flex items-center text-white font-medium text-lg hover:text-blue-200 transition-colors">
-              Learn more
-              <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Form Card (7 cols on large screens) -->
-      <div class="lg:col-span-7">
-        <form class="relative bg-white rounded-3xl shadow-2xl shadow-blue-900/5 p-8 lg:p-12 overflow-hidden border border-slate-100 hover:border-blue-100 transition-all duration-500">
-          <!-- Glass Morphism Effect -->
-          <div class="absolute inset-0 bg-gradient-to-br from-white/80 to-white/95 backdrop-blur-sm -z-10"></div>
-          
-          <!-- Background Pattern -->
-          <div class="absolute inset-0 bg-grid-dot-pattern opacity-[0.03] -z-10"></div>
-          
-          <div class="relative">
-            <!-- Form Heading -->
-            <div class="text-center mb-10">
-              <h3 class="text-3xl font-black bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 mb-4">Get Early Access</h3>
-              <p class="text-slate-500">Join our exclusive beta program today!</p>
-            </div>
-            
-            <!-- Form Fields -->
-            <div class="space-y-6">
-              <!-- Name Fields Row -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div class="space-y-2">
-                  <label for="first_name" class="block text-sm font-medium text-slate-700">First Name</label>
-                  <input type="text" id="first_name" placeholder="John" required 
-                    class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" />
-                </div>
-                
-                <div class="space-y-2">
-                  <label for="last_name" class="block text-sm font-medium text-slate-700">Last Name</label>
-                  <input type="text" id="last_name" placeholder="Doe" required 
-                    class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" />
-                </div>
-              </div>
-              
-              <!-- Email Field -->
-              <div class="space-y-2">
-                <label for="email" class="block text-sm font-medium text-slate-700">Email Address</label>
-                <input type="email" id="email" placeholder="john@example.com" required 
-                  class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" />
-              </div>
-              
-              <!-- Child's Age -->
-              <div class="space-y-2">
-                <label for="child_age" class="block text-sm font-medium text-slate-700">Child's Age</label>
-                <select id="child_age" required
-                  class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
-                  <option value="" disabled selected>Select age range</option>
-                  <option value="5-7">5-7 years</option>
-                  <option value="8-10">8-10 years</option>
-                  <option value="11-13">11-13 years</option>
-                  <option value="14-16">14-16 years</option>
-                </select>
-              </div>
-              
-              <!-- Checkboxes -->
-              <div class="space-y-4">
-                <label class="flex items-center gap-3 cursor-pointer group">
-                  <div class="relative">
-                    <input type="checkbox" class="sr-only peer" checked />
-                    <div class="w-6 h-6 border-2 border-slate-300 rounded bg-white peer-checked:bg-blue-500 peer-checked:border-blue-500 transition-all"></div>
-                    <div class="absolute top-[3px] left-[6px] opacity-0 peer-checked:opacity-100 text-white transform rotate-45 w-[6px] h-[11px] border-r-2 border-b-2"></div>
-                  </div>
-                  <span class="text-slate-600 group-hover:text-slate-800 transition-colors">I'd like to receive updates & newsletter</span>
-                </label>
-                
-                <label class="flex items-center gap-3 cursor-pointer group">
-                  <div class="relative">
-                    <input type="checkbox" class="sr-only peer" />
-                    <div class="w-6 h-6 border-2 border-slate-300 rounded bg-white peer-checked:bg-blue-500 peer-checked:border-blue-500 transition-all"></div>
-                    <div class="absolute top-[3px] left-[6px] opacity-0 peer-checked:opacity-100 text-white transform rotate-45 w-[6px] h-[11px] border-r-2 border-b-2"></div>
-                  </div>
-                  <span class="text-slate-600 group-hover:text-slate-800 transition-colors">I'd like to schedule a demo</span>
-                </label>
-              </div>
-              
-              <!-- Submit Button -->
-              <button type="submit" class="group relative w-full flex items-center justify-center py-4 px-8 mt-6 bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white text-lg font-bold rounded-xl overflow-hidden shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300">
-                <span class="absolute inset-0 bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <span class="flex items-center relative z-10">
-                  <span>Request Invite</span>
-                  <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-                  </svg>
-                </span>
-              </button>
-            </div>
-            
-            <!-- Security Note -->
-            <p class="mt-6 text-center text-xs text-slate-500 flex items-center justify-center">
-              <svg class="w-4 h-4 text-slate-400 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-              </svg>
-              Your information is securely encrypted
-            </p>
-          </div>
-        </form>
-      </div>
-    </div>
-    
-    <!-- Testimonial Badge -->
-    <div class="mt-16 flex justify-center">
-      <div class="bg-white/80 backdrop-blur-lg border border-slate-100 rounded-2xl p-4 shadow-lg flex items-center gap-4 max-w-md mx-auto animate-float">
-        
-         
-    </div>
-  </div>
-  
-  <!-- Add Font Awesome for icons -->
-  <script src="https://kit.fontawesome.com/123456789.js" crossorigin="anonymous"></script>
-  
-  <!-- Add custom styles for animations -->
-  <style>
-    .bg-grid-pattern {
-      background-image: linear-gradient(to right, rgba(99, 102, 241, 0.1) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
-      background-size: 50px 50px;
-    }
-    
-    .bg-grid-dot-pattern {
-      background-image: radial-gradient(rgba(99, 102, 241, 0.5) 1px, transparent 1px);
-      background-size: 20px 20px;
-    }
-    
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
-    
-    .animate-float {
-      animation: float 6s ease-in-out infinite;
-    }
-  </style>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="relative py-32 bg-gradient-to-b from-white to-blue-50 overflow-hidden">
-    <!-- Animated Background Elements -->
-    <div class="absolute inset-0 -z-10 overflow-hidden">
-        <!-- Floating Geometric Shapes -->
-        <div class="absolute top-20 left-[10%] w-40 h-40 rounded-full border-2 border-blue-200 opacity-60 animate-[float_15s_ease-in-out_infinite]"></div>
-        <div class="absolute top-[30%] right-[5%] w-64 h-64 rounded-full border-2 border-blue-200 opacity-30 animate-[float_18s_ease-in-out_infinite_1s]"></div>
-        <div class="absolute bottom-20 left-[15%] w-52 h-52 rounded-full border-2 border-blue-200 opacity-40 animate-[float_20s_ease-in-out_infinite_2s]"></div>
-        
-        <!-- Gradient Blobs -->
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-gradient-to-br from-blue-100/30 to-indigo-100/30 blur-[100px] animate-[pulse_15s_ease-in-out_infinite]"></div>
-        <div class="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-gradient-to-br from-cyan-100/30 to-blue-100/30 blur-[80px] animate-[pulse_18s_ease-in-out_infinite_3s]"></div>
-        
-        <!-- Subtle Grid Pattern -->
-        <div class="absolute inset-0 bg-grid-pattern opacity-[0.03]"></div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-        <!-- Animated Section Header -->
-        <div class="relative text-center mb-16">
-            <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-100/50 backdrop-blur-sm text-sm font-medium text-blue-600 mb-4">
-                <span class="flex h-2 w-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span>
-                <span>Client Success Stories</span>
-            </div>
-            
-            <h2 class="text-5xl md:text-6xl font-black mb-4 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                What Our Clients Say
-            </h2>
-            
-            <p class="text-blue-600/70 text-xl max-w-2xl mx-auto">
-                Real feedback from businesses transforming with Torvic
-            </p>
-            
-            <!-- Animated Underline -->
-            <div class="w-24 h-1 bg-gradient-to-r from-blue-400 to-blue-600 mx-auto mt-6 rounded-full"></div>
-        </div>
-
-        <!-- Testimonial Carousel -->
-        <div class="relative my-20">
-            <!-- Large Quote Mark -->
-            <div class="absolute -top-14 left-4 text-blue-200 opacity-20">
-                <svg class="w-28 h-28" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5 3.871 3.871 0 01-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5 3.871 3.871 0 01-2.748-1.179z"></path>
-                </svg>
-            </div>
-            
-            <div id="testimonialSlider" class="splide relative z-10" aria-label="Client Testimonials">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        @php
-                            $testimonials = [
-                                [
-                                    'content' => 'From invoicing to daily tracking, everything is in one place. We love how effortless it is to use Torvic.',
-                                    'name' => 'Sophie Lee',
-                                    'role' => 'Product Manager',
-                                    'company' => 'HealthFlow',
-                                    'image' => 'https://randomuser.me/api/portraits/women/44.jpg',
-                                    'rating' => 5,
-                                    'color' => 'from-blue-600 to-indigo-600'
-                                ],
-                                [
-                                    'content' => 'Torvic gives us quick insights into our finances. It\'s intuitive, beautiful, and simplifies reporting.',
-                                    'name' => 'Matt Stith',
-                                    'role' => 'CEO',
-                                    'company' => 'Voli Wellness',
-                                    'image' => 'https://randomuser.me/api/portraits/men/32.jpg',
-                                    'rating' => 5,
-                                    'color' => 'from-cyan-600 to-blue-600'
-                                ],
-                                [
-                                    'content' => 'The interface is beautiful. Torvic has improved our operations and decisions.',
-                                    'name' => 'James Carter',
-                                    'role' => 'CTO',
-                                    'company' => 'BrightTech',
-                                    'image' => 'https://randomuser.me/api/portraits/men/28.jpg',
-                                    'rating' => 5,
-                                    'color' => 'from-blue-600 to-violet-600'
-                                ]
-                            ];
-                        @endphp
-                        
-                        @foreach($testimonials as $testimonial)
-                        <li class="splide__slide px-4">
-                            <div class="group relative p-1 rounded-3xl transition-transform duration-500 transform hover:scale-[1.01]">
-                                <!-- Card Glow Effect -->
-                                <div class="absolute inset-0 bg-gradient-to-r {{ $testimonial['color'] }} opacity-50 blur-xl rounded-3xl group-hover:opacity-70 transition-opacity"></div>
-                                
-                                <!-- Card Content -->
-                                <div class="relative bg-gradient-to-br {{ $testimonial['color'] }} rounded-3xl overflow-hidden">
-                                    <!-- Card Pattern Overlay -->
-                                    <div class="absolute inset-0 opacity-10">
-                                        <svg width="100%" height="100%">
-                                            <defs>
-                                                <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-                                                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="currentColor" stroke-width="0.5"></path>
-                                                </pattern>
-                                            </defs>
-                                            <rect width="100%" height="100%" fill="url(#smallGrid)"></rect>
-                                        </svg>
-                                    </div>
-                                    
-                                    <!-- Highlight Effect -->
-                                    <div class="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gradient-to-t from-transparent via-white/10 to-transparent transition-opacity duration-700"></div>
-                                    
-                                    <!-- Card Inner Content -->
-                                    <div class="relative p-8 md:p-10">
-                                        <!-- Quote Icon -->
-                                        <svg class="w-12 h-12 text-white/20 mb-4" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5 3.871 3.871 0 01-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5 3.871 3.871 0 01-2.748-1.179z"></path>
-                                        </svg>
-                                        
-                                        <!-- Stars -->
-                                        <div class="flex mb-6 space-x-1">
-                                            @for($i = 0; $i < $testimonial['rating']; $i++)
-                                            <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                                            </svg>
-                                            @endfor
-                                        </div>
-                                        
-                                        <!-- Testimonial Text -->
-                                        <p class="text-white text-xl font-medium mb-8 leading-relaxed">
-                                            "{{ $testimonial['content'] }}"
-                                        </p>
-                                        
-                                        <!-- User Info -->
-                                        <div class="flex items-center">
-                                            <div class="relative mr-4">
-                                                <img src="{{ $testimonial['image'] }}" alt="{{ $testimonial['name'] }}" 
-                                                     class="w-14 h-14 rounded-full object-cover border-2 border-white/50">
-                                                     
-                                                <!-- Halo Effect -->
-                                                <div class="absolute inset-0 rounded-full border-2 border-white/20 scale-110 animate-pulse"></div>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white text-lg font-bold">{{ $testimonial['name'] }}</h4>
-                                                <p class="text-white/80 text-sm">{{ $testimonial['role'] }}, {{ $testimonial['company'] }}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-                
-                <!-- Custom Navigation -->
-                <div class="splide__arrows flex justify-center mt-10 gap-4">
-                
-                </div>
-            </div>
-            
-            <!-- Decorative Elements -->
-            <div class="absolute -bottom-10 right-0 w-64 h-64 border-8 border-blue-100/30 rounded-full opacity-30"></div>
-            <div class="absolute -bottom-5 left-1/3 w-32 h-32 border-4 border-blue-100/30 rounded-full opacity-40"></div>
-        </div>
-        
-        <!-- Stats Bar -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-            @foreach([
-                ['count' => '97%', 'label' => 'Satisfaction Rate'],
-                ['count' => '24/7', 'label' => 'Support Available'],
-                ['count' => '3,500+', 'label' => 'Active Users'],
-                ['count' => '15+', 'label' => 'Industry Awards']
-            ] as $stat)
-            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 text-center shadow-lg border border-blue-100 transform transition-transform hover:scale-105">
-                <p class="text-3xl md:text-4xl font-extrabold text-blue-600 mb-2">{{ $stat['count'] }}</p>
-                <p class="text-blue-600/70 text-sm font-medium">{{ $stat['label'] }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div>
-    
-    <!-- SVG Wave Bottom -->
-    <div class="absolute bottom-0 inset-x-0 text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="currentColor" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,64C384,53,480,75,576,112C672,149,768,203,864,202.7C960,203,1056,149,1152,128C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    <!-- Info Card -->
+    <div class="bg-[#1f88e4] text-white p-12 rounded-[40px] shadow-2xl relative hover:scale-105 transition-transform">
+      <div class="absolute top-0 right-0 opacity-10">
+        <svg viewBox="0 0 200 200" width="200" height="200" class="text-white">
+          <path fill="currentColor" d="M0,100 Q100,200 200,100 L200,0 L0,0 Z" />
         </svg>
+      </div>
+
+      <h3 class="text-4xl font-bold mb-6 leading-snug">Unlock the Power of <br />AI-Powered Learning</h3>
+      <p class="text-white/90 text-base mb-6">
+        Help your child master math with AI-driven lessons, gamified quizzes, and real-time progress tracking.
+      </p>
+
+      <ul class="space-y-4 text-white">
+        <li class="flex items-center gap-3">
+          <i class="fas fa-check-circle text-white text-xl"></i>
+          <span class="font-medium">Personalized AI Lessons</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <i class="fas fa-chart-line text-white text-xl"></i>
+          <span class="font-medium">Real-Time Progress Reports</span>
+        </li>
+        <li class="flex items-center gap-3">
+          <i class="fas fa-gamepad text-white text-xl"></i>
+          <span class="font-medium">Fun Quizzes & Achievements</span>
+        </li>
+      </ul>
     </div>
+
+    <!-- Form Card -->
+    <form class="bg-white rounded-[40px] shadow-2xl p-10 space-y-6 border border-blue-100 hover:scale-105 transition-transform">
+      <h3 class="text-3xl font-bold text-center bg-gradient-to-r from-[#1f88e4] to-[#ff467c] text-transparent bg-clip-text">Get Early Access</h3>
+      <input type="text" placeholder="First Name" required class="w-full border border-gray-300 rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#1f88e4]" />
+      <input type="text" placeholder="Last Name" required class="w-full border border-gray-300 rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#1f88e4]" />
+      <input type="email" placeholder="Email Address" required class="w-full border border-gray-300 rounded-lg px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#1f88e4]" />
+
+      <label class="flex items-center gap-2 text-sm text-gray-600">
+        <input type="checkbox" class="accent-[#1f88e4] w-5 h-5" />
+        I agree to receive updates & promotions.
+      </label>
+
+      <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#1f88e4] to-[#ff467c] text-white font-bold rounded-xl shadow-md transition hover:brightness-110">
+        Request Invite
+      </button>
+    </form>
+  </div>
 </section>
 
-<!-- Required Splide JS -->
-@push('styles')
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-<style>
-    @keyframes float {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-20px); }
-        100% { transform: translateY(0); }
-    }
-    
-    @keyframes pulse {
-        0% { opacity: 0.3; }
-        50% { opacity: 0.6; }
-        100% { opacity: 0.3; }
-    }
-    
-    .bg-grid-pattern {
-        background-image: linear-gradient(to right, rgba(99, 102, 241, 0.1) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
-        background-size: 40px 40px;
-    }
-</style>
-@endpush
 
-@push('scripts')
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
+
+
+
+<section class="bg-white text-[#1f88e4] py-32 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-6">
+    <!-- Section Heading -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">What Our Clients Say</h2>
+      <p class="text-[#1f88e4]/70 text-lg">Real feedback from businesses using Torvic</p>
+    </div>
+
+    <!-- Card + Arrows Wrapper -->
+    <div class="relative flex items-center justify-center">
+      <!-- Left Arrow -->
+      <button class="swiper-button-prev z-10 absolute -left-10 w-8 h-8 flex items-center justify-center text-black">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Swiper -->
+      <div class="swiper testimonialSwiper w-full">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
+              <div class="flex items-center gap-4 justify-center mb-4">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
+                <div class="text-left">
+                  <p class="font-bold text-base">Sophie Lee</p>
+                  <p class="text-sm text-white/80 -mt-1">HealthFlow</p>
+                </div>
+              </div>
+              <h3 class="text-lg font-serif mb-3">Made our operations seamless</h3>
+              <p class="text-white/90 text-sm leading-relaxed">“From invoicing to daily tracking, everything is in one place. We love how effortless it is to use Torvic.”</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
+              <div class="flex items-center gap-4 justify-center mb-4">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
+                <div class="text-left">
+                  <p class="font-bold text-base">Matt Stith</p>
+                  <p class="text-sm text-white/80 -mt-1">Voli Wellness</p>
+                </div>
+              </div>
+              <h3 class="text-lg font-serif mb-3">Snapshot of our business</h3>
+              <p class="text-white/90 text-sm leading-relaxed">“Torvic gives us quick insights into our finances. It's intuitive, beautiful, and simplifies reporting.”</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
+              <div class="flex items-center gap-4 justify-center mb-4">
+                <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
+                <div class="text-left">
+                  <p class="font-bold text-base">James Carter</p>
+                  <p class="text-sm text-white/80 -mt-1">BrightTech</p>
+                </div>
+              </div>
+              <h3 class="text-lg font-serif mb-3">Powerful features</h3>
+              <p class="text-white/90 text-sm leading-relaxed">“The interface is beautiful. Torvic has improved our operations and decisions.”</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-6 text-center"></div>
+      </div>
+
+      <!-- Right Arrow -->
+      <button class="swiper-button-next z-10 absolute -right-10 w-8 h-8 flex items-center justify-center text-black">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        new Splide('#testimonialSlider', {
-            type: 'loop',
-            perPage: 1,
-            perMove: 1,
-            gap: '2rem',
-            padding: '10%',
-            arrows: true,
-            pagination: false,
-            breakpoints: {
-                1024: {
-                    padding: '5%',
-                },
-                768: {
-                    padding: '0',
-                },
-                640: {
-                    gap: '1rem',
-                }
-            },
-            classes: {
-                arrows: 'splide__arrows your-class-arrows',
-                arrow: 'splide__arrow your-class-arrow',
-                prev: 'splide__arrow--prev your-class-prev',
-                next: 'splide__arrow--next your-class-next',
-            },
-        }).mount();
-    });
+  const swiper = new Swiper(".testimonialSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 </script>
-@endpush
 
 
 
