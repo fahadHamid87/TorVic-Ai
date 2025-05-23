@@ -7,6 +7,9 @@
     overflow: hidden;
     color: white;
 }
+body {
+  font-family: 'Geist', sans-serif;
+}
 
 /* Floating shapes — multiple blurred neon glows with drifting */
 .floating-shape {
