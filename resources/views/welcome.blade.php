@@ -732,7 +732,7 @@
 
 
 
-
+<!---testimonial section-->
 <section class="bg-white text-[#1f88e4] py-32 relative overflow-hidden">
   <div class="max-w-4xl mx-auto px-6">
     <!-- Section Heading -->
@@ -741,77 +741,74 @@
       <p class="text-[#1f88e4]/70 text-lg">Real feedback from businesses using Torvic</p>
     </div>
 
-    <!-- Card + Arrows Wrapper -->
-    <div class="relative flex items-center justify-center">
-      <!-- Left Arrow -->
-      <button class="swiper-button-prev z-10 absolute -left-10 w-8 h-8 flex items-center justify-center text-black">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <!-- Swiper -->
+    <div class="swiper testimonialSwiper w-full">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
+            <div class="flex items-center gap-4 justify-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
+              <div class="text-left">
+                <p class="font-bold text-base">Sophie Lee</p>
+                <p class="text-sm text-white/80 -mt-1">HealthFlow</p>
+              </div>
+            </div>
+            <h3 class="text-lg font-serif mb-3">Made our operations seamless</h3>
+            <p class="text-white/90 text-sm leading-relaxed">“From invoicing to daily tracking, everything is in one place. We love how effortless it is to use Torvic.”</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
+            <div class="flex items-center gap-4 justify-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
+              <div class="text-left">
+                <p class="font-bold text-base">Matt Stith</p>
+                <p class="text-sm text-white/80 -mt-1">Voli Wellness</p>
+              </div>
+            </div>
+            <h3 class="text-lg font-serif mb-3">Snapshot of our business</h3>
+            <p class="text-white/90 text-sm leading-relaxed">“Torvic gives us quick insights into our finances. It's intuitive, beautiful, and simplifies reporting.”</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
+            <div class="flex items-center gap-4 justify-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
+              <div class="text-left">
+                <p class="font-bold text-base">James Carter</p>
+                <p class="text-sm text-white/80 -mt-1">BrightTech</p>
+              </div>
+            </div>
+            <h3 class="text-lg font-serif mb-3">Powerful features</h3>
+            <p class="text-white/90 text-sm leading-relaxed">“The interface is beautiful. Torvic has improved our operations and decisions.”</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Custom Arrows at Bottom -->
+    <div class="flex justify-center items-center gap-6 mt-10">
+      <button id="prevBtn" class="w-10 h-10 flex items-center justify-center text-[#1f88e4] hover:text-blue-700 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-
-      <!-- Swiper -->
-      <div class="swiper testimonialSwiper w-full">
-        <div class="swiper-wrapper">
-
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
-              <div class="flex items-center gap-4 justify-center mb-4">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
-                <div class="text-left">
-                  <p class="font-bold text-base">Sophie Lee</p>
-                  <p class="text-sm text-white/80 -mt-1">HealthFlow</p>
-                </div>
-              </div>
-              <h3 class="text-lg font-serif mb-3">Made our operations seamless</h3>
-              <p class="text-white/90 text-sm leading-relaxed">“From invoicing to daily tracking, everything is in one place. We love how effortless it is to use Torvic.”</p>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="swiper-slide">
-            <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
-              <div class="flex items-center gap-4 justify-center mb-4">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
-                <div class="text-left">
-                  <p class="font-bold text-base">Matt Stith</p>
-                  <p class="text-sm text-white/80 -mt-1">Voli Wellness</p>
-                </div>
-              </div>
-              <h3 class="text-lg font-serif mb-3">Snapshot of our business</h3>
-              <p class="text-white/90 text-sm leading-relaxed">“Torvic gives us quick insights into our finances. It's intuitive, beautiful, and simplifies reporting.”</p>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide">
-            <div class="bg-[#1f88e4] text-white rounded-3xl p-8 shadow-xl text-center">
-              <div class="flex items-center gap-4 justify-center mb-4">
-                <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="User" class="w-10 h-10 rounded-full border-2 border-white">
-                <div class="text-left">
-                  <p class="font-bold text-base">James Carter</p>
-                  <p class="text-sm text-white/80 -mt-1">BrightTech</p>
-                </div>
-              </div>
-              <h3 class="text-lg font-serif mb-3">Powerful features</h3>
-              <p class="text-white/90 text-sm leading-relaxed">“The interface is beautiful. Torvic has improved our operations and decisions.”</p>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Pagination -->
-        <div class="swiper-pagination mt-6 text-center"></div>
-      </div>
-
-      <!-- Right Arrow -->
-      <button class="swiper-button-next z-10 absolute -right-10 w-8 h-8 flex items-center justify-center text-black">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <button id="nextBtn" class="w-10 h-10 flex items-center justify-center text-[#1f88e4] hover:text-blue-700 transition">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
         </svg>
       </button>
     </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination mt-6 text-center"></div>
   </div>
 </section>
 
@@ -828,11 +825,12 @@
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: "#nextBtn",
+      prevEl: "#prevBtn",
     },
   });
 </script>
+
 
 
 
