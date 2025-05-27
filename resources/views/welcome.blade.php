@@ -239,19 +239,15 @@
 
 
 
-
 <!--whats is torvic section-->
 <section class="relative py-28 select-none" style="background-color: #1e88e5;">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 relative h-[600px] md:h-[600px]">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 relative h-auto md:h-[600px]">
 
     <!-- Desktop only: absolute cards including center text block -->
     <div class="md:block hidden">
       <!-- Top Center Card -->
-      <div
-        class="absolute top-[-20px] left-1/2 -translate-x-1/2 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-30"
-      >
+      <div class="absolute top-[-20px] left-1/2 -translate-x-1/2 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-30">
         <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
-          <!-- Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -264,31 +260,24 @@
       </div>
 
       <!-- Center Text Block -->
-<div
-  class="absolute top-[40%] left-1/2 transform -translate-x-1/2 max-w-md text-center z-20 bg-white rounded-3xl p-8 shadow-lg"
-  style="min-height: 420px; overflow-y: visible;"
->
-  <h2 class="text-5xl font-extrabold text-[#ff467c] leading-tight">
-    What is <span class="text-pink-300">Torvic.AI</span>?
-  </h2>
-  <p class="mt-4 text-gray-800 text-base leading-relaxed">
-    A revolutionary learning platform designed specifically for 5th-grade math students,
-    making math engaging and effective.
-  </p>
-  <p class="mt-2 text-gray-700 text-sm leading-relaxed">
-    Validated by real teachers, creatives, and AI – your child will experience math like never before.
-  </p>
-  <button
-    class="mt-6 px-10 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 text-white font-semibold shadow-lg hover:brightness-110 transition"
-  >
-    Start Free Trial
-  </button>
-</div>
+      <div class="absolute top-[40%] left-1/2 transform -translate-x-1/2 max-w-md text-center z-20 bg-white rounded-3xl p-8 shadow-lg" style="min-height: 420px;">
+        <h2 class="text-5xl font-extrabold text-[#ff467c] leading-tight">
+          What is <span class="text-pink-300">Torvic.AI</span>?
+        </h2>
+        <p class="mt-4 text-gray-800 text-base leading-relaxed">
+          A revolutionary learning platform designed specifically for 5th-grade math students,
+          making math engaging and effective.
+        </p>
+        <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+          Validated by real teachers, creatives, and AI – your child will experience math like never before.
+        </p>
+        <button class="mt-6 px-10 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 text-white font-semibold shadow-lg hover:brightness-110 transition">
+          Start Free Trial
+        </button>
+      </div>
 
       <!-- Left Card -->
-      <div
-        class="absolute top-1/3 left-0 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-10"
-      >
+      <div class="absolute top-1/3 left-0 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-10">
         <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -302,9 +291,7 @@
       </div>
 
       <!-- Right Card -->
-      <div
-        class="absolute top-1/3 right-0 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-10"
-      >
+      <div class="absolute top-1/3 right-0 max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer z-10">
         <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -321,11 +308,8 @@
     <!-- Mobile only: stacked cards -->
     <div class="md:hidden flex flex-col items-center space-y-6">
       <!-- Teacher card -->
-      <div
-        class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer"
-      >
+      <div class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer">
         <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
-          <!-- Icon -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -337,32 +321,25 @@
         </p>
       </div>
 
-     <!-- Center Text Block -->
-<div
-  class="absolute top-[40%] left-1/2 transform -translate-x-1/2 max-w-md text-center z-20 bg-white rounded-3xl p-8 shadow-lg"
-  style="min-height: 380px;"
->
-  <h2 class="text-5xl font-extrabold text-[#ff467c] leading-tight">
-    What is <span class="text-pink-300">Torvic.AI</span>?
-  </h2>
-  <p class="mt-4 text-gray-800 text-base leading-relaxed">
-    A revolutionary learning platform designed specifically for 5th-grade math students,
-    making math engaging and effective.
-  </p>
-  <p class="mt-2 text-gray-700 text-sm leading-relaxed">
-    Validated by real teachers, creatives, and AI – your child will experience math like never before.
-  </p>
-  <button
-    class="mt-6 px-10 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 text-white font-semibold shadow-lg hover:brightness-110 transition"
-  >
-    Start Free Trial
-  </button>
-</div>
+      <!-- Center Text Block - Mobile -->
+      <div class="w-full max-w-xs bg-white rounded-3xl p-6 shadow-xl text-center text-gray-900">
+        <h2 class="text-3xl font-extrabold text-[#ff467c] leading-tight">
+          What is <span class="text-pink-300">Torvic.AI</span>?
+        </h2>
+        <p class="mt-4 text-gray-800 text-base leading-relaxed">
+          A revolutionary learning platform designed specifically for 5th-grade math students,
+          making math engaging and effective.
+        </p>
+        <p class="mt-2 text-gray-700 text-sm leading-relaxed">
+          Validated by real teachers, creatives, and AI – your child will experience math like never before.
+        </p>
+        <button class="mt-6 px-8 py-2 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 text-white font-semibold shadow-lg hover:brightness-110 transition">
+          Start Free Trial
+        </button>
+      </div>
 
       <!-- AI Integration card -->
-      <div
-        class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer"
-      >
+      <div class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer">
         <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -376,9 +353,7 @@
       </div>
 
       <!-- Curriculum-Based Learning card -->
-      <div
-        class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer"
-      >
+      <div class="max-w-xs w-full bg-white rounded-2xl shadow-xl p-6 text-gray-900 cursor-pointer">
         <div class="text-pink-500 p-3 rounded-lg bg-pink-100 w-max mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -405,26 +380,22 @@
 
 
 
-
-
 <!-- Advanced Modern Win-Win Section -->
 <section class="relative bg-[#f2f7ff] py-28 px-6 md:px-20 overflow-hidden">
   <!-- Section Heading -->
-  <div class="text-center mb-28">
-   <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-gray-900">
-  <span class=" text-[#1f88e4]">
-    Empowering Everyone in the Learning Journey
-</h2>
-  </span> 
+  <div class="text-center mb-20">
+    <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6 text-gray-900">
+      <span class="text-[#1f88e4]">Empowering Everyone in the Learning Journey</span>
+    </h2>
     <p class="text-lg text-gray-600">
       From home to school to self-paced learning — each experience is crafted to engage and inspire.
     </p>
   </div>
 
   <!-- Tilted Card Stack -->
-  <div class="relative flex justify-center items-start gap-6">
+  <div class="relative flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
     <!-- Parent Card -->
-    <div class="relative z-30 transform rotate-[-3deg] -translate-y-4 hover:rotate-0 hover:scale-[1.02] transition duration-500 ease-in-out bg-white rounded-3xl shadow-xl w-full max-w-sm p-6 border-pink-200 border">
+    <div class="relative z-30 transform md:rotate-[-3deg] md:-translate-y-4 hover:rotate-0 hover:scale-[1.02] transition duration-500 ease-in-out bg-white rounded-3xl shadow-xl w-full max-w-sm p-6 border-pink-200 border">
       <div class="rounded-xl overflow-hidden mb-4 h-48">
         <img src="{{ asset('1.avif') }}" class="object-cover w-full h-full" alt="Parents">
       </div>
@@ -437,7 +408,7 @@
     </div>
 
     <!-- Educator Card -->
-    <div class="relative z-40 transform rotate-[2deg] hover:rotate-0 hover:scale-[1.02] transition duration-500 ease-in-out bg-white rounded-3xl shadow-2xl w-full max-w-sm p-6 border-blue-200 border">
+    <div class="relative z-40 transform md:rotate-[2deg] hover:rotate-0 hover:scale-[1.02] transition duration-500 ease-in-out bg-white rounded-3xl shadow-2xl w-full max-w-sm p-6 border-blue-200 border">
       <div class="rounded-xl overflow-hidden mb-4 h-48">
         <img src="{{ asset('2.avif') }}" class="object-cover w-full h-full" alt="Educators">
       </div>
@@ -450,7 +421,7 @@
     </div>
 
     <!-- Student Card -->
-    <div class="relative z-20 transform rotate-[5deg] translate-y-4 hover:rotate-0 hover:scale-[1.02] transition duration-500 ease-in-out bg-white rounded-3xl shadow-xl w-full max-w-sm p-6 border-yellow-300 border">
+    <div class="relative z-20 transform md:rotate-[5deg] md:translate-y-4 hover:rotate-0 hover:scale-[1.02] transition duration-500 ease-in-out bg-white rounded-3xl shadow-xl w-full max-w-sm p-6 border-yellow-300 border">
       <div class="rounded-xl overflow-hidden mb-4 h-48">
         <img src="{{ asset('3.avif') }}" class="object-cover w-full h-full" alt="Students">
       </div>
@@ -463,6 +434,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Modern 3 Steps Section -->
 <section class="steps-section bg-white py-24 relative overflow-hidden">

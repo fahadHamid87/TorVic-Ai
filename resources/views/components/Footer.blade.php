@@ -70,7 +70,8 @@
           @foreach([
             ['title' => 'Explore', 'icon' => 'compass', 'links' => ['Home', 'Features', 'Pricing', 'Integrations']],
             ['title' => 'Company', 'icon' => 'building', 'links' => ['About', 'Blog', 'Careers', 'Press Kit']],
-            ['title' => 'Support', 'icon' => 'life-buoy', 'links' => ['Help Center', 'Contact', 'Privacy Policy', 'Terms of Service']],
+            ['title' => 'Support', 'icon' => 'life-ring', 'links' => ['Help Center', 'Contact', 'Privacy Policy', 'Terms of Service']],
+           
           ] as $section)
           <div class="group perspective-1000">
             <div class="transform transition-transform duration-500 group-hover:scale-105">
